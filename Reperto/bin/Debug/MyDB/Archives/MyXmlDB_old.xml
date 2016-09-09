@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <myFiche>
+    <id>3</id>
+    <cassette>C002</cassette>
+    <date>13/03/2016</date>
+    <theme1>Autre Thème</theme1>
+    <theme2></theme2>
+    <personne>michel</personne>
+    <description>michel fait caca</description>
+    <lienVideo>lienvideo001</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>1</id>
+    <cassette>C001</cassette>
+    <date>01/01/2016</date>
+    <theme1>Moto</theme1>
+    <theme2>Autre Thème</theme2>
+    <personne>Jo, Pascale, Michel, Blandine, Stephane, Marie</personne>
+    <description>Col du Donon</description>
+    <lienVideo>video.avi</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>4</id>
+    <cassette>C009</cassette>
+    <date>11-04-2016</date>
+    <theme1></theme1>
+    <theme2>Voiture</theme2>
+    <personne>michel
+stephane</personne>
+    <description>desciption
+sur 2
+ou 3 lignes</description>
+    <lienVideo>Videos/12-03-2010 Papa danseuse.AVI</lienVideo>
+    <tempsDebutSequence>00:01:35</tempsDebutSequence>
+  </myFiche>
+</root>

@@ -1,0 +1,34 @@
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\bin\Debug\Reperto.exe
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\bin\Debug\Reperto.pdb
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.Accueil.resources
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.FormulaireFiche.resources
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.exe
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.pdb
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.FormulaireTheme.resources
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\bin\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\bin\Debug\AxInterop.WMPLib.dll
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.MediaPlayer.resources
+C:\Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.FicheVisu.resources
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\Interop.WMPLib.dll
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\AxInterop.WMPLib.dll
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.csproj.ResolveComReference.cache
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.exe
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.pdb
+G:\##Projects##\Reperto\Reperto\bin\Debug\Reperto.exe
+G:\##Projects##\Reperto\Reperto\bin\Debug\Reperto.pdb
+G:\##Projects##\Reperto\Reperto\bin\Debug\Interop.WMPLib.dll
+G:\##Projects##\Reperto\Reperto\bin\Debug\AxInterop.WMPLib.dll
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.Accueil.resources
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.FicheVisu.resources
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.FormulaireFiche.resources
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.FormulaireTheme.resources
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.MediaPlayer.resources
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.Properties.Resources.resources
+G:\##Projects##\Reperto\Reperto\obj\x86\Debug\Reperto.csproj.GenerateResource.Cache
