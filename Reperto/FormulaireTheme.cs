@@ -26,12 +26,15 @@ namespace Reperto
 
         public void InitializeThemeComboBox()
         {
+            int cpt = 0;
             this.cbxListThemesModif.Items.Clear();
             this.cbxListThemesSupp.Items.Clear();
             foreach (string item in tfctn.fnSelectThemes())
             {
                 this.cbxListThemesModif.Items.Add(item);
-                this.cbxListThemesSupp.Items.Add(item);
+                cpt = fctn.fnCount("", "", "", item, "", "", "", "");
+                if (cpt == 0) { this.cbxListThemesSupp.Items.Add(item); }
+                
             }
             this.cbxListThemesModif.SelectedIndex = 0;
             this.cbxListThemesSupp.SelectedIndex = 0;
@@ -39,11 +42,7 @@ namespace Reperto
         #endregion
 
         #region Gestion des Evenements
-        /// <summary>
         /// Bouton Créer Theme
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
             private void btnCreationTheme_Click(object sender, EventArgs e)
             {
                 if (this.txtCreationTheme.Text != "")
@@ -57,11 +56,7 @@ namespace Reperto
                 }
             }
 
-        /// <summary>
         /// Bouton Modifier Theme
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
             private void btnModifierTheme_Click(object sender, EventArgs e)
             {
                 if (this.cbxListThemesModif.Text != "")
@@ -70,7 +65,7 @@ namespace Reperto
                     if (txtModificationTheme.Text != "")
                     {
                         //verifier que le nouveau theme n'existe pas deja
-                        if (tfctn.fnSelectCount(txtModificationTheme.Text) == 0)
+                        if (tfctn.fnSelectCountTheme(txtModificationTheme.Text) == 0)
                         {
                             tfctn.fnModificationTheme(this.cbxListThemesModif.Text, txtModificationTheme.Text);
                             this.Close();
@@ -93,11 +88,7 @@ namespace Reperto
 
             }
 
-        /// <summary>
         /// Bouton Supprimer Theme
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
             private void btnSupprimerTheme_Click(object sender, EventArgs e)
             {
                 if (this.cbxListThemesModif.Text != "")
@@ -110,10 +101,6 @@ namespace Reperto
                     MessageBox.Show("Veuillez sélectionner un Thème à supprimer.");
                 }
             }
-            
-
         #endregion
-
-
     }
 }

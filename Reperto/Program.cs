@@ -94,7 +94,7 @@ namespace Reperto
     {
         GlobalFunctions gfctn = new GlobalFunctions();
 
-        #region CRUD
+        #region CRUD Fiche
             /// <summary>
             /// Creation d'une nouvelle fiche
             /// </summary>
@@ -106,7 +106,7 @@ namespace Reperto
             /// <param name="Description"></param>
             /// <param name="LienVideo"></param>
             /// <param name="TempsDebutSequence"></param>
-            public void fnCreationFiche(String Cassette, String Date, String Theme, String SousTheme, String Personne, String Lieu, String Description, String LienVideo, String TempsDebutSequence)
+            public string fnCreationFiche(String Cassette, String Date, String Theme, String SousTheme, String Personne, String Lieu, String Description, String LienVideo, String TempsDebutSequence)
             {
             
                 Int32 id = 0;
@@ -144,6 +144,7 @@ namespace Reperto
                                            new XElement("tempsDebutSequence", TempsDebutSequence)));
 
                 xmlDoc.Save(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
+                return id.ToString();
             }
 
             /// <summary>
@@ -206,11 +207,8 @@ namespace Reperto
             }
         #endregion
 
-        #region Selection
-            /// <summary>
+        #region Selection Fiche
             /// Selectionner une liste de fiche en fonction des parametres de filtre
-            /// </summary>
-            /// <returns></returns>
             public List<Fiche> fnSelection(string cassette, string mois, string annee, string theme1, string theme2, string personne, string lieu, string descrip)
             {
                 List<Fiche> tabFiche = new List<Fiche>();
@@ -315,11 +313,103 @@ namespace Reperto
                 return tabFiche;
             }
 
-            /// <summary>
+            /// Compter le nombre de records en fonction des parametres de filtre
+            public int fnCount(string cassette, string mois, string annee, string theme1, string theme2, string personne, string lieu, string descrip)
+            {
+                int cpt = 0;
+                XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
+                XElement collec = xmlDoc.Element("root");
+
+                var records = from myCollection in collec.Elements("myFiche")
+                              select myCollection;
+
+                if (cassette != string.Empty)
+                {
+                    records = from myCollection in records
+                              where myCollection.Element("cassette").Value.ToLower().Contains(cassette.ToLower())
+                              select myCollection;
+                }
+
+                if (mois != string.Empty)
+                {
+                    string mois2 = "";
+                    switch (mois)
+                    {
+                        case "Janvier": mois2 = "01"; break;
+                        case "Février": mois2 = "02"; break;
+                        case "Mars": mois2 = "03"; break;
+                        case "Avril": mois2 = "04"; break;
+                        case "Mai": mois2 = "05"; break;
+                        case "Juin": mois2 = "06"; break;
+                        case "Juillet": mois2 = "07"; break;
+                        case "Aout": mois2 = "08"; break;
+                        case "Septembre": mois2 = "09"; break;
+                        case "Octobre": mois2 = "10"; break;
+                        case "Novembre": mois2 = "11"; break;
+                        case "Décembre": mois2 = "12"; break;
+                    }
+                    records = from myCollection in records
+                              where myCollection.Element("date").Value.Substring(3, 2) == mois2
+                              select myCollection;
+                }
+
+                if (annee != string.Empty)
+                {
+                    records = from myCollection in records
+                              where myCollection.Element("date").Value.Substring(6, 4) == annee
+                              select myCollection;
+                }
+
+                if (theme1 != string.Empty)
+                {
+                    records = from myCollection in records
+                              where myCollection.Element("theme1").Value == theme1 || myCollection.Element("theme2").Value == theme1
+                              select myCollection;
+                }
+
+                if (theme2 != string.Empty)
+                {
+                    records = from myCollection in records
+                              where myCollection.Element("theme1").Value == theme2 || myCollection.Element("theme2").Value == theme2
+                              select myCollection;
+                }
+
+                if (lieu != string.Empty)
+                {
+                    records = from myCollection in records
+                              where myCollection.Element("lieu").Value.ToLower().Replace("ç", "c").Replace("é", "e").Replace("è", "e").Replace("ê", "e").Replace("ë", "e").Contains(lieu.ToLower().Replace("ç", "c").Replace("é", "e").Replace("è", "e").Replace("ê", "e").Replace("ë", "e"))
+                              select myCollection;
+                }
+
+                if (personne != string.Empty)
+                {
+                    records = from myCollection in records
+                              where myCollection.Element("personne").Value.ToLower().Replace("ç", "c").Replace("é", "e").Replace("è", "e").Replace("ê", "e").Replace("ë", "e").Contains(personne.ToLower().Replace("ç", "c").Replace("é", "e").Replace("è", "e").Replace("ê", "e").Replace("ë", "e"))
+                              select myCollection;
+                }
+
+                if (descrip != string.Empty)
+                {
+                    records = from myCollection in records
+                              where myCollection.Element("description").Value.ToLower().Replace("ç", "c").Replace("é", "e").Replace("è", "e").Replace("ê", "e").Replace("ë", "e").Contains(descrip.ToLower().Replace("ç", "c").Replace("é", "e").Replace("è", "e").Replace("ê", "e").Replace("ë", "e"))
+                              select myCollection;
+                }
+
+
+                records = from myCollection in records
+                          select myCollection;
+
+
+
+                foreach (var myData in records)
+                {
+                    cpt = cpt + 1;
+                }
+
+                return cpt;
+            }
+
             /// Selectionner une seule fiche en fonction de son Id
-            /// </summary>
-            /// <param name="nodeToLoad"></param>
-            /// <returns></returns>
             public Fiche fnSelection(int nodeToLoad)
             {
                 Fiche myFiche = new Fiche();
@@ -355,7 +445,7 @@ namespace Reperto
         GlobalFunctions gfctn = new GlobalFunctions();
         FunctionFiches fctn = new FunctionFiches();
 
-        #region CRUD
+        #region CRUD Theme
             /// <summary>
             /// Creation d'un nouveau Theme
             /// </summary>
@@ -494,7 +584,7 @@ namespace Reperto
             }
         #endregion
 
-        #region Selection
+        #region Selection Theme
         public List<string> fnSelectThemes()
         {
             List<string> listOfThemes = new List<string>();
@@ -502,6 +592,7 @@ namespace Reperto
             XElement collec = xmlDoc.Element("root");
 
             var records = from myTheme in collec.Elements("theme")
+                          orderby myTheme.Element("name").Value
                           select myTheme;
 
             foreach (var myData in records)
@@ -512,7 +603,7 @@ namespace Reperto
             return listOfThemes;
         }
 
-        public int fnSelectCount(string theme)
+        public int fnSelectCountTheme(string theme)
         {
             int count = 0;
             XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/AppConfig.xml");

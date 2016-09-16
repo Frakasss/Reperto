@@ -1,18 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <myFiche>
-    <id>2</id>
-    <cassette>C001</cassette>
-    <date>17-10-2004</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Michel, Stéphane</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>21ans (Michel) - 20ans (Stéphane)</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>3</id>
     <cassette>C001</cassette>
     <date>24-10-2004</date>
@@ -577,18 +565,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>52</id>
-    <cassette>C009</cassette>
-    <date>19-07-2005</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>15ans (1/2) - Avec ses copines (Claire et Hélène ALEVI, Elisabeth, Marie Laure SCHWEITZER, Laura FOLMER, Mélinda ANDREOTI, Stéphane) - Gateaux, Cadeaux, Jeux</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>53</id>
     <cassette>C010</cassette>
     <date>05-03-2005</date>
@@ -709,18 +685,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>63</id>
-    <cassette>C013</cassette>
-    <date>29-03-2005</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Pascale</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>43ans</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>64</id>
     <cassette>C013</cassette>
     <date>02-04-2005</date>
@@ -777,18 +741,6 @@
     <personne>Jo, Pascale, Michel, Stéphane, Delphine</personne>
     <lieu>ST AVOLD, CAC</lieu>
     <description>Gala du Conservatoire - Chorale (Il est libre max) - Saxophones (Sweet Home Chicago) - Classe de batteries (Gilles BONNABAUD) - Ensemble de Guitares (Gilles AMBLARD, Kakariko, Gerudo) - Piano 6 mains avec Delphine (Le Petit Prince, Les Baobabs) - Chorale (J'irai au bout de mes rêves) - Final</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>69</id>
-    <cassette>C015</cassette>
-    <date>17-06-2005</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine, Jacques, Janine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>15ans</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -909,18 +861,6 @@
     <personne>Jo, Pascale, Michel, Stéphane, Delphine</personne>
     <lieu>ALTVILLER</lieu>
     <description>Inauguration Piscine</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>80</id>
-    <cassette>C017</cassette>
-    <date>19-07-2005</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>15ans (2/2) - Avec ses copines (Claire et Hélène ALEVI, Elisabeth, Marie Laure SCHWEITZER, Laura FOLMER, Mélinda ANDREOTI, Stéphane) - Gateaux, Cadeaux, Jeux</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -1129,30 +1069,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>98</id>
-    <cassette>C023</cassette>
-    <date>16-10-2005</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Stéphane</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>21ans</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>99</id>
-    <cassette>C023</cassette>
-    <date>23-10-2005</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Stéphane</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>21ans</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>100</id>
     <cassette>C023</cassette>
     <date>31-10-2005</date>
@@ -1161,18 +1077,6 @@
     <personne>Delphine</personne>
     <lieu>ALTVILLER</lieu>
     <description>Citrouilles - Retour de la collecte, Pesée, Tri, Partage des Bonbons - Déguisements - Marie Laure SCHWEITZER - Laura FOLMER - Hélène ALIEVI</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>101</id>
-    <cassette>C023</cassette>
-    <date>01-11-2005</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Stéphane</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>Encore un cadeau pour Stéphane - Poster</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -2269,18 +2173,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>193</id>
-    <cassette>C046</cassette>
-    <date>18-06-2006</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>16ans - Cadeau: DA VINCI CODE illustré</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>194</id>
     <cassette>C046</cassette>
     <date>27-06-2006</date>
@@ -2341,18 +2233,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>199</id>
-    <cassette>C048</cassette>
-    <date>02-07-2006</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Jo</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>ALTVILLER - (1/2) - 50ans Jo - 25ans Mariage  - Barbecue </description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>200</id>
     <cassette>C049</cassette>
     <date>08-06-2006</date>
@@ -2361,18 +2241,6 @@
     <personne>Jo</personne>
     <lieu>METZ, Bon Pasteur</lieu>
     <description>Tournoi ABALONE - Collège Paul Valery de BORNY - Collège La Carrière de ST AVOLD</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>201</id>
-    <cassette>C049</cassette>
-    <date>02-07-2006</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Jo</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>(2/2) - 50ans Jo - 25ans Mariage  - Barbecue </description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -2457,18 +2325,6 @@
     <personne>Michel, Stéphane, Delphine</personne>
     <lieu>ALTVILLER</lieu>
     <description>Piscine dans le Jardin - Stéphane a froid</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>209</id>
-    <cassette>C050</cassette>
-    <date>22-10-2006</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Stéphane</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>22ans</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -2989,30 +2845,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>255</id>
-    <cassette>C067</cassette>
-    <date>23-03-2007</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Jo</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>51ans - Anniversaire Jo</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>256</id>
-    <cassette>C067</cassette>
-    <date>29-03-2007</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Pascale, François</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>45ans - Anniversaire Pascale</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>257</id>
     <cassette>C067</cassette>
     <date>08-04-2007</date>
@@ -3181,18 +3013,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>271</id>
-    <cassette>C072</cassette>
-    <date>17-06-2007</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine, Jacques, Janine, François</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>17ans</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>272</id>
     <cassette>C072</cassette>
     <date>17-06-2007</date>
@@ -3249,18 +3069,6 @@
     <personne>Jo, Pascale, François, Michel, Stéphane, Delphine</personne>
     <lieu>ALTVILLER</lieu>
     <description>Arrosage de la Médaille de Michel</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>277</id>
-    <cassette>C073</cassette>
-    <date>12-06-2007</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>17ans</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -3465,18 +3273,6 @@
     <personne>Jo, Pascale, François, Cédric</personne>
     <lieu>VECKRING, Fort du Hackenberg</lieu>
     <description>Visite du fort de la ligne Maginot</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>295</id>
-    <cassette>C078</cassette>
-    <date>19-08-2007</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Michel</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>24ans - Champagne - Gateaux</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -3865,18 +3661,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>328</id>
-    <cassette>C089</cassette>
-    <date>06-04-2008</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Jo, Pascale, François, Michel, Stéphane, Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>Fete anniversaire Pascale et Jo</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>329</id>
     <cassette>C089</cassette>
     <date>17-05-2008</date>
@@ -3949,18 +3733,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>335</id>
-    <cassette>C091</cassette>
-    <date>17-06-2008</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>18 ans</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>336</id>
     <cassette>C091</cassette>
     <date>17-06-2008</date>
@@ -4029,18 +3801,6 @@
     <personne>Jo, Pascale, François, Michel, Stéphane, Delphine</personne>
     <lieu>ALTVILLER</lieu>
     <description>Préparation de la tarte aux pommes</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>342</id>
-    <cassette>C091</cassette>
-    <date>23-03-2008</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Jo, Matz, Thomas</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>Anniversaire Jo</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -4221,18 +3981,6 @@
     <personne>Jo, Pascale, Michel, Stéphane, Delphine</personne>
     <lieu>ALTVILLER</lieu>
     <description>Fête des Pères</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>358</id>
-    <cassette>C094</cassette>
-    <date>17-06-2008</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>18 ans</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -4609,18 +4357,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>390</id>
-    <cassette>C103</cassette>
-    <date>30-06-2008</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine, Jacques, Janine, François, Marie-Louise, Jo, Pascale</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>18ans</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>391</id>
     <cassette>C103</cassette>
     <date>04-07-2008</date>
@@ -4641,18 +4377,6 @@
     <personne>Michel, Stéphane</personne>
     <lieu>ST AVOLD</lieu>
     <description>Répétition pour le concert du 14 Juillet</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>393</id>
-    <cassette>C104</cassette>
-    <date>19-07-2008</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine, Jo, Pascale, Michel, Stéphane</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>18ans - Cadeaux: appareil photo et caméscope</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -4725,18 +4449,6 @@
     <personne>Jo, Pascale, Farrissier, Clar, Jacquier</personne>
     <lieu>COLOMBIER</lieu>
     <description>Pêche à la truite - Barbecue chez Stéphane et Séverine</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>400</id>
-    <cassette>C106</cassette>
-    <date>24-08-2008</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Michel, Jo, Pascale, François, Stéphane, Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>25ans</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -4821,18 +4533,6 @@
     <personne>Jo, François, Michel, Stéphane</personne>
     <lieu>ALTVILLER</lieu>
     <description>Départ moto - François (W650) - Stéphane (W650) avec Julie - Jo (900Diversion) avec Michel</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>408</id>
-    <cassette>C107</cassette>
-    <date>19-10-2008</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Stéphane</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>24ans</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -5233,18 +4933,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>442</id>
-    <cassette>C120</cassette>
-    <date>16-04-2009</date>
-    <theme1>Vacances</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Jo, Pascale, Jacquier</personne>
-    <lieu>COLOMBIER</lieu>
-    <description>Anniversaires Jo et Pascale</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>443</id>
     <cassette>C120</cassette>
     <date>07-06-2009</date>
@@ -5253,30 +4941,6 @@
     <personne>Pascale, Michel, Stéphane, Delphine</personne>
     <lieu>ALTVILLER</lieu>
     <description>Fête des mères</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>444</id>
-    <cassette>C121</cassette>
-    <date>23-03-2009</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Jo, François, Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>53ans</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>445</id>
-    <cassette>C121</cassette>
-    <date>29-03-2009</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Pascale, Jo, Michel, Stéphane, Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>49ans - Quelques cadeaux pour Jo - Matz</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -5485,18 +5149,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>463</id>
-    <cassette>C126</cassette>
-    <date>20-06-2009</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>19ans - Copains copines - Installation campement (tentes)</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>464</id>
     <cassette>C126</cassette>
     <date>21-06-2009</date>
@@ -5581,18 +5233,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>471</id>
-    <cassette>C127</cassette>
-    <date>22-06-2009</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine, Jacques, Janine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>19ans - Gateaux Cadeaux - Hamac, Volière, Chèque</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>472</id>
     <cassette>C128</cassette>
     <date>24-05-2009</date>
@@ -5637,18 +5277,6 @@
     <personne>Jo, Pascale, Jacquier</personne>
     <lieu>COLOMBIER</lieu>
     <description>Soirée avec André et Nadette - Michel et Amélie</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>476</id>
-    <cassette>C129</cassette>
-    <date>15-08-2009</date>
-    <theme1>Vacances</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Michel</personne>
-    <lieu>COLOMBIER</lieu>
-    <description>26ans - Piscine chez Jacquier</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -6145,18 +5773,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>518</id>
-    <cassette>C142</cassette>
-    <date>20-06-2010</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>20ans - Cadeau Michel</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>519</id>
     <cassette>C142</cassette>
     <date>20-06-2010</date>
@@ -6189,18 +5805,6 @@
     <personne>Jo</personne>
     <lieu>ALTVILLER</lieu>
     <description>Répétition à la Cave (2/2) - Lifeguards - Steve SCHIRU - Alain GRÜN - ALBERT Mickaël - OMHOVER David - Stéphane</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>522</id>
-    <cassette>C143</cassette>
-    <date>27-06-2010</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>20ans - Cadeaux - Champagne</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -6325,18 +5929,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>533</id>
-    <cassette>C146</cassette>
-    <date>16-08-2010</date>
-    <theme1>Vacances</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Jo, Pascale, Michel, Delphine</personne>
-    <lieu>BAGNOLS</lieu>
-    <description>20ans - Anniversaire Cyril</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>534</id>
     <cassette>C146</cassette>
     <date>04-09-2010</date>
@@ -6369,18 +5961,6 @@
     <personne>Jo</personne>
     <lieu>ST AVOLD, Collège</lieu>
     <description>CROSS Interclasses du Collège - VictoireTHIL Gaël 6e1</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>537</id>
-    <cassette>C147</cassette>
-    <date>16-10-2010</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Stéphane</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>26ans</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -6429,18 +6009,6 @@
     <personne>Michel</personne>
     <lieu>METZ, Arsenal</lieu>
     <description>Concert (2/2)</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>542</id>
-    <cassette>C149</cassette>
-    <date>24-10-2010</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Stéphane</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>26ans - Voiture Blues Brothers!</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -6793,18 +6361,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>572</id>
-    <cassette>C159</cassette>
-    <date>20-06-2011</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>21ans</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>573</id>
     <cassette>C159</cassette>
     <date>22-06-2011</date>
@@ -6901,42 +6457,6 @@
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
   <myFiche>
-    <id>581</id>
-    <cassette>C161</cassette>
-    <date>07-08-2011</date>
-    <theme1>Vacances</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Jacques</personne>
-    <lieu>BAGNOLS, COLOMBIER, MEJANNE</lieu>
-    <description>80ans (1/2) - Restaurant</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>582</id>
-    <cassette>C162</cassette>
-    <date>07-08-2011</date>
-    <theme1>Vacances</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Jacques</personne>
-    <lieu>BAGNOLS, COLOMBIER, MEJANNE</lieu>
-    <description>80ans (2/2) - Album Photo avec Marie Thérèse</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>583</id>
-    <cassette>C162</cassette>
-    <date>28-08-2011</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Michel</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>28ans</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
     <id>584</id>
     <cassette>C162</cassette>
     <date>18-09-2011</date>
@@ -6957,18 +6477,6 @@
     <personne>Stéphane</personne>
     <lieu>ALTVILLER</lieu>
     <description>Missing The Schoolbus - Répet cave (2/2)</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>586</id>
-    <cassette>C163</cassette>
-    <date>16-10-2011</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Stéphane</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>27ans</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -7041,18 +6549,6 @@
     <personne>Jo, Pascale, François, Marie, Delphine</personne>
     <lieu>ALTVILLER</lieu>
     <description>Recherche des Œufs cachés</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>593</id>
-    <cassette>C165</cassette>
-    <date>08-04-2012</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Jo, Pascale, François, Marie, Delphine</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>Anniversaires François, Jo, Pascale et Marie</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -7197,18 +6693,6 @@
     <personne>Jo, Pascale, Michel, Delphine</personne>
     <lieu>ALTVILLER</lieu>
     <description>Petit Déjeuner fête des Mères</description>
-    <lienVideo>#</lienVideo>
-    <tempsDebutSequence>00:00:00</tempsDebutSequence>
-  </myFiche>
-  <myFiche>
-    <id>606</id>
-    <cassette>C172</cassette>
-    <date>14-10-2012</date>
-    <theme1>Maison</theme1>
-    <theme2>Anniversaire</theme2>
-    <personne>Stéphane</personne>
-    <lieu>ALTVILLER</lieu>
-    <description>28ans</description>
     <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
@@ -7414,6 +6898,522 @@
     <lieu>ALTVILLER</lieu>
     <description>Gouter en Famille - Jour de l'accident de voiture de Michel</description>
     <lienVideo>Documents and Settings\Administrator\Desktop\##Projects##\Reperto\Reperto\bin\Debug\Videos\12-03-2010 Papa danseuse.AVI</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>2</id>
+    <cassette>C001</cassette>
+    <date>17-10-2004</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Michel, Stéphane</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>21ans (Michel) - 20ans (Stéphane)</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>52</id>
+    <cassette>C009</cassette>
+    <date>19-07-2005</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>15ans (1/2) - Avec ses copines (Claire et Hélène ALEVI, Elisabeth, Marie Laure SCHWEITZER, Laura FOLMER, Mélinda ANDREOTI, Stéphane) - Gateaux, Cadeaux, Jeux</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>63</id>
+    <cassette>C013</cassette>
+    <date>29-03-2005</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Pascale</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>43ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>69</id>
+    <cassette>C015</cassette>
+    <date>17-06-2005</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine, Jacques, Janine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>15ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>80</id>
+    <cassette>C017</cassette>
+    <date>19-07-2005</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>15ans (2/2) - Avec ses copines (Claire et Hélène ALEVI, Elisabeth, Marie Laure SCHWEITZER, Laura FOLMER, Mélinda ANDREOTI, Stéphane) - Gateaux, Cadeaux, Jeux</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>98</id>
+    <cassette>C023</cassette>
+    <date>16-10-2005</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Stéphane</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>21ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>99</id>
+    <cassette>C023</cassette>
+    <date>23-10-2005</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Stéphane</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>21ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>101</id>
+    <cassette>C023</cassette>
+    <date>01-11-2005</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Stéphane</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>Encore un cadeau pour Stéphane - Poster</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>193</id>
+    <cassette>C046</cassette>
+    <date>18-06-2006</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>16ans - Cadeau: DA VINCI CODE illustré</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>199</id>
+    <cassette>C048</cassette>
+    <date>02-07-2006</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Jo</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>ALTVILLER - (1/2) - 50ans Jo - 25ans Mariage  - Barbecue </description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>201</id>
+    <cassette>C049</cassette>
+    <date>02-07-2006</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Jo</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>(2/2) - 50ans Jo - 25ans Mariage  - Barbecue </description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>209</id>
+    <cassette>C050</cassette>
+    <date>22-10-2006</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Stéphane</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>22ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>255</id>
+    <cassette>C067</cassette>
+    <date>23-03-2007</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Jo</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>51ans - Anniversaire Jo</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>256</id>
+    <cassette>C067</cassette>
+    <date>29-03-2007</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Pascale, François</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>45ans - Anniversaire Pascale</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>271</id>
+    <cassette>C072</cassette>
+    <date>17-06-2007</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine, Jacques, Janine, François</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>17ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>277</id>
+    <cassette>C073</cassette>
+    <date>12-06-2007</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>17ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>295</id>
+    <cassette>C078</cassette>
+    <date>19-08-2007</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Michel</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>24ans - Champagne - Gateaux</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>328</id>
+    <cassette>C089</cassette>
+    <date>06-04-2008</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Jo, Pascale, François, Michel, Stéphane, Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>Fete anniversaire Pascale et Jo</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>335</id>
+    <cassette>C091</cassette>
+    <date>17-06-2008</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>18 ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>342</id>
+    <cassette>C091</cassette>
+    <date>23-03-2008</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Jo, Matz, Thomas</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>Anniversaire Jo</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>358</id>
+    <cassette>C094</cassette>
+    <date>17-06-2008</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>18 ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>390</id>
+    <cassette>C103</cassette>
+    <date>30-06-2008</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine, Jacques, Janine, François, Marie-Louise, Jo, Pascale</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>18ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>393</id>
+    <cassette>C104</cassette>
+    <date>19-07-2008</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine, Jo, Pascale, Michel, Stéphane</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>18ans - Cadeaux: appareil photo et caméscope</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>400</id>
+    <cassette>C106</cassette>
+    <date>24-08-2008</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Michel, Jo, Pascale, François, Stéphane, Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>25ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>408</id>
+    <cassette>C107</cassette>
+    <date>19-10-2008</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Stéphane</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>24ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>442</id>
+    <cassette>C120</cassette>
+    <date>16-04-2009</date>
+    <theme1>Vacances</theme1>
+    <theme2></theme2>
+    <personne>Jo, Pascale, Jacquier</personne>
+    <lieu>COLOMBIER</lieu>
+    <description>Anniversaires Jo et Pascale</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>444</id>
+    <cassette>C121</cassette>
+    <date>23-03-2009</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Jo, François, Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>53ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>445</id>
+    <cassette>C121</cassette>
+    <date>29-03-2009</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Pascale, Jo, Michel, Stéphane, Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>49ans - Quelques cadeaux pour Jo - Matz</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>463</id>
+    <cassette>C126</cassette>
+    <date>20-06-2009</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>19ans - Copains copines - Installation campement (tentes)</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>471</id>
+    <cassette>C127</cassette>
+    <date>22-06-2009</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine, Jacques, Janine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>19ans - Gateaux Cadeaux - Hamac, Volière, Chèque</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>476</id>
+    <cassette>C129</cassette>
+    <date>15-08-2009</date>
+    <theme1>Vacances</theme1>
+    <theme2></theme2>
+    <personne>Michel</personne>
+    <lieu>COLOMBIER</lieu>
+    <description>26ans - Piscine chez Jacquier</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>518</id>
+    <cassette>C142</cassette>
+    <date>20-06-2010</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>20ans - Cadeau Michel</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>522</id>
+    <cassette>C143</cassette>
+    <date>27-06-2010</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>20ans - Cadeaux - Champagne</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>533</id>
+    <cassette>C146</cassette>
+    <date>16-08-2010</date>
+    <theme1>Vacances</theme1>
+    <theme2></theme2>
+    <personne>Jo, Pascale, Michel, Delphine</personne>
+    <lieu>BAGNOLS</lieu>
+    <description>20ans - Anniversaire Cyril</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>537</id>
+    <cassette>C147</cassette>
+    <date>16-10-2010</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Stéphane</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>26ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>542</id>
+    <cassette>C149</cassette>
+    <date>24-10-2010</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Stéphane</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>26ans - Voiture Blues Brothers!</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>572</id>
+    <cassette>C159</cassette>
+    <date>20-06-2011</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>21ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>581</id>
+    <cassette>C161</cassette>
+    <date>07-08-2011</date>
+    <theme1>Vacances</theme1>
+    <theme2></theme2>
+    <personne>Jacques</personne>
+    <lieu>BAGNOLS, COLOMBIER, MEJANNE</lieu>
+    <description>80ans (1/2) - Restaurant</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>582</id>
+    <cassette>C162</cassette>
+    <date>07-08-2011</date>
+    <theme1>Vacances</theme1>
+    <theme2></theme2>
+    <personne>Jacques</personne>
+    <lieu>BAGNOLS, COLOMBIER, MEJANNE</lieu>
+    <description>80ans (2/2) - Album Photo avec Marie Thérèse</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>583</id>
+    <cassette>C162</cassette>
+    <date>28-08-2011</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Michel</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>28ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>586</id>
+    <cassette>C163</cassette>
+    <date>16-10-2011</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Stéphane</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>27ans</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>593</id>
+    <cassette>C165</cassette>
+    <date>08-04-2012</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Jo, Pascale, François, Marie, Delphine</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>Anniversaires François, Jo, Pascale et Marie</description>
+    <lienVideo>#</lienVideo>
+    <tempsDebutSequence>00:00:00</tempsDebutSequence>
+  </myFiche>
+  <myFiche>
+    <id>606</id>
+    <cassette>C172</cassette>
+    <date>14-10-2012</date>
+    <theme1>Maison</theme1>
+    <theme2></theme2>
+    <personne>Stéphane</personne>
+    <lieu>ALTVILLER</lieu>
+    <description>28ans</description>
+    <lienVideo>#</lienVideo>
     <tempsDebutSequence>00:00:00</tempsDebutSequence>
   </myFiche>
 </root>
