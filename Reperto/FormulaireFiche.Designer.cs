@@ -65,9 +65,9 @@
             this.lblCassette.AutoSize = true;
             this.lblCassette.Location = new System.Drawing.Point(62, 30);
             this.lblCassette.Name = "lblCassette";
-            this.lblCassette.Size = new System.Drawing.Size(48, 13);
+            this.lblCassette.Size = new System.Drawing.Size(44, 13);
             this.lblCassette.TabIndex = 1;
-            this.lblCassette.Text = "Cassette";
+            this.lblCassette.Text = "Support";
             // 
             // lblDate
             // 
@@ -83,27 +83,27 @@
             this.lblTheme1.AutoSize = true;
             this.lblTheme1.Location = new System.Drawing.Point(62, 84);
             this.lblTheme1.Name = "lblTheme1";
-            this.lblTheme1.Size = new System.Drawing.Size(49, 13);
+            this.lblTheme1.Size = new System.Drawing.Size(43, 13);
             this.lblTheme1.TabIndex = 3;
-            this.lblTheme1.Text = "Theme 1";
+            this.lblTheme1.Text = "Mot Clé";
             // 
             // lblTheme2
             // 
             this.lblTheme2.AutoSize = true;
             this.lblTheme2.Location = new System.Drawing.Point(62, 112);
             this.lblTheme2.Name = "lblTheme2";
-            this.lblTheme2.Size = new System.Drawing.Size(49, 13);
+            this.lblTheme2.Size = new System.Drawing.Size(43, 13);
             this.lblTheme2.TabIndex = 4;
-            this.lblTheme2.Text = "Theme 2";
+            this.lblTheme2.Text = "Mot Clé";
             // 
             // lblPersonnes
             // 
             this.lblPersonnes.AutoSize = true;
             this.lblPersonnes.Location = new System.Drawing.Point(62, 156);
             this.lblPersonnes.Name = "lblPersonnes";
-            this.lblPersonnes.Size = new System.Drawing.Size(57, 13);
+            this.lblPersonnes.Size = new System.Drawing.Size(38, 13);
             this.lblPersonnes.TabIndex = 5;
-            this.lblPersonnes.Text = "Qui est là?";
+            this.lblPersonnes.Text = "Acteur";
             // 
             // lblDescription
             // 

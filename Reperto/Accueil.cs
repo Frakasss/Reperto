@@ -15,14 +15,17 @@ namespace Reperto
         FunctionFiches fctn = new FunctionFiches();
         GlobalFunctions gfctn = new GlobalFunctions();
         FunctionThemes tfctn = new FunctionThemes();
+        FunctionMenu fctm = new FunctionMenu();
+
+        string idToSelect;
+        private void setIdToSelect(string s) { idToSelect = s; }
 
         public Accueil()
         {
             InitializeComponent();
             InitializeThemeComboBox();
-            MessageBox.Show("Charger le fichier DB et les couleurs dans AppConfig.xml");
             FillDatagridview(txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
-        
+            InitializeFormColor(fctm.selectionCouleur());
         }
 
         // Remplissage du datagridview
@@ -45,6 +48,40 @@ namespace Reperto
                 dgvListeFiches.Columns["colDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
             }
         }
+        private void FillDatagridview(string idToBeSelected, string txtRechCassette, string cbxMois, string txtAnnee, string cbxTheme1, string cbxTheme2, string txtPersonne, string txtLieu, string txtMotCle)
+        {
+            int cpt = 0;
+            int indexToBeSelected = 0;
+            this.dgvListeFiches.Rows.Clear();
+            foreach (Fiche myFiche in fctn.fnSelection(txtRechCassette, cbxMois, txtAnnee, cbxTheme1, cbxTheme2, txtPersonne, txtLieu, txtMotCle))
+            {
+                string labelLien = "";
+                string lien = "";
+                int secondes = (Convert.ToInt32(myFiche.TempsDebutSequence.Substring(0, 2)) * 60 * 60) + (Convert.ToInt32(myFiche.TempsDebutSequence.Substring(3, 2)) * 60) + Convert.ToInt32(myFiche.TempsDebutSequence.Substring(6, 2));
+
+                if (File.Exists(gfctn.AppDrive() + myFiche.LienVideo.Replace("\\", "/")))
+                {
+                    labelLien = "Video";
+                    lien = myFiche.LienVideo.Replace("\\", "/");
+                }
+
+
+                this.dgvListeFiches.Rows.Add(myFiche.Id, myFiche.Cassette, Convert.ToDateTime(myFiche.Date), myFiche.Theme1, myFiche.Theme2, myFiche.Personne, myFiche.Lieu, myFiche.Description, labelLien, lien, secondes);
+                dgvListeFiches.Columns["colDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
+                if (myFiche.Id == idToBeSelected) { indexToBeSelected = cpt; }
+                cpt = cpt + 1;
+            }
+            if (indexToBeSelected > 1)
+            {
+                this.dgvListeFiches.FirstDisplayedScrollingRowIndex = indexToBeSelected - 2;
+            }
+            else
+            {
+                this.dgvListeFiches.FirstDisplayedScrollingRowIndex = 0;
+            }
+            this.dgvListeFiches.Rows[indexToBeSelected].Selected = true;
+            this.dgvListeFiches.CurrentCell = this.dgvListeFiches[1, indexToBeSelected];
+        }
         private void FillDatagridview(int indexToSelect, string txtRechCassette, string cbxMois, string txtAnnee, string cbxTheme1, string cbxTheme2, string txtPersonne, string txtLieu, string txtMotCle)
         {
             this.dgvListeFiches.Rows.Clear();
@@ -64,27 +101,26 @@ namespace Reperto
                 this.dgvListeFiches.Rows.Add(myFiche.Id, myFiche.Cassette, Convert.ToDateTime(myFiche.Date), myFiche.Theme1, myFiche.Theme2, myFiche.Personne, myFiche.Lieu, myFiche.Description, labelLien, lien, secondes);
                 dgvListeFiches.Columns["colDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
             }
-        }
-        private void FillDatagridview(string idToSelect, string txtRechCassette, string cbxMois, string txtAnnee, string cbxTheme1, string cbxTheme2, string txtPersonne, string txtLieu, string txtMotCle)
-        {
-            this.dgvListeFiches.Rows.Clear();
-            foreach (Fiche myFiche in fctn.fnSelection(txtRechCassette, cbxMois, txtAnnee, cbxTheme1, cbxTheme2, txtPersonne, txtLieu, txtMotCle))
+            if (indexToSelect > 1)
             {
-                string labelLien = "";
-                string lien = "";
-                int secondes = (Convert.ToInt32(myFiche.TempsDebutSequence.Substring(0, 2)) * 60 * 60) + (Convert.ToInt32(myFiche.TempsDebutSequence.Substring(3, 2)) * 60) + Convert.ToInt32(myFiche.TempsDebutSequence.Substring(6, 2));
-
-                if (File.Exists(gfctn.AppDrive() + myFiche.LienVideo.Replace("\\", "/")))
-                {
-                    labelLien = "Video";
-                    lien = myFiche.LienVideo.Replace("\\", "/");
-                }
-
-
-                this.dgvListeFiches.Rows.Add(myFiche.Id, myFiche.Cassette, Convert.ToDateTime(myFiche.Date), myFiche.Theme1, myFiche.Theme2, myFiche.Personne, myFiche.Lieu, myFiche.Description, labelLien, lien, secondes);
-                dgvListeFiches.Columns["colDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
+                this.dgvListeFiches.FirstDisplayedScrollingRowIndex = indexToSelect - 2;
             }
+            else
+            {
+                this.dgvListeFiches.FirstDisplayedScrollingRowIndex = indexToSelect;
+            }
+            if (indexToSelect > 0) { 
+                this.dgvListeFiches.Rows[indexToSelect - 1].Selected = true;
+                this.dgvListeFiches.CurrentCell = this.dgvListeFiches[1, indexToSelect-1];
+            } else { 
+                this.dgvListeFiches.Rows[indexToSelect].Selected = true;
+                this.dgvListeFiches.CurrentCell = this.dgvListeFiches[1, indexToSelect];
+            }
+            
+            
+            
         }
+       
         
         // Initialisation des thèmes
         public void InitializeThemeComboBox()
@@ -100,6 +136,44 @@ namespace Reperto
             }
             this.cbxTheme1.SelectedIndex = 0;
             this.cbxTheme2.SelectedIndex = 0;
+        }
+
+        // Initialisation de l'aspect du formulaire
+        public void InitializeFormColor(string color) {
+            this.bleuToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.rougeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.vertToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.noirToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            this.standardToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+            switch (color)
+            {
+                case "Bleu":
+                    this.BackColor = System.Drawing.Color.LightSkyBlue;
+                    this.menuStrip1.BackColor = System.Drawing.Color.DeepSkyBlue;
+                    this.bleuToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+                    break;
+                case "Vert":
+                    this.BackColor = System.Drawing.Color.PaleTurquoise;
+                    this.menuStrip1.BackColor = System.Drawing.Color.Turquoise;
+                    this.vertToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+                    break;
+                case "Rouge":
+                    this.BackColor = System.Drawing.Color.LightCoral;
+                    this.menuStrip1.BackColor = System.Drawing.Color.Tomato;
+                    this.rougeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+                    break;
+                case "Noir":
+                    this.BackColor = System.Drawing.Color.Black;
+                    this.menuStrip1.BackColor = System.Drawing.Color.DarkGray;
+                    this.noirToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
+                    break;
+                default:
+                    this.BackColor = System.Drawing.SystemColors.Control;
+                    this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
+                    this.standardToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked; 
+                    break;
+            }
+
         }
 
         // Bouton Réinitialiser formulaire de recherche
@@ -124,9 +198,9 @@ namespace Reperto
         // Bouton Créer
         private void btnNouveau_Click(object sender, EventArgs e)
         {
-            string idToSelect = "0";
             FormulaireFiche formulaireFiche = new FormulaireFiche();
             formulaireFiche.modeFiche = FormulaireFiche.ModeFiche.CREER;
+            formulaireFiche.returnCreatedValue += new FormulaireFiche.ChildEvent(this.setIdToSelect);
             formulaireFiche.ShowDialog();
             FillDatagridview(idToSelect,txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
         }
@@ -144,7 +218,7 @@ namespace Reperto
                 FormulaireFiche formulaireFiche = new FormulaireFiche(Convert.ToInt32(idToSelect));
                 formulaireFiche.modeFiche = FormulaireFiche.ModeFiche.MODIFIER;
                 formulaireFiche.ShowDialog();
-                FillDatagridview(idToSelect, txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
+                FillDatagridview(Convert.ToInt32(idToSelect), txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
             }
         }
 
@@ -154,10 +228,10 @@ namespace Reperto
             if (this.dgvListeFiches.CurrentRow == null){
                 MessageBox.Show("Veuillez sélectionner une ligne!");
             } else{
-                int currentLineIndex = Convert.ToInt32(this.dgvListeFiches.CurrentRow.Cells["colId"].Value.ToString());
-                fctn.fnSuppressionFiche(currentLineIndex);
+                int index = this.dgvListeFiches.CurrentRow.Index;
+                fctn.fnSuppressionFiche(Convert.ToInt32(this.dgvListeFiches.CurrentRow.Cells["colId"].Value.ToString()));
                 this.dgvListeFiches.Rows.Clear();
-                FillDatagridview(currentLineIndex,txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
+                FillDatagridview(index, txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
             }
         }
 
@@ -228,62 +302,33 @@ namespace Reperto
 
         private void standardToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.bleuToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.rougeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.vertToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.noirToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.standardToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            Accueil.ActiveForm.BackColor = System.Drawing.SystemColors.Control;
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
-            MessageBox.Show("Enregistrer le changement dans AppConfig.xml");
+            InitializeFormColor("Standard");
+            fctm.saveParametreCouleur("Standard");
+            
         }
 
         private void bleuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.bleuToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.rougeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.vertToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.noirToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.standardToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            Accueil.ActiveForm.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.menuStrip1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            MessageBox.Show("Enregistrer le changement dans AppConfig.xml");
+            InitializeFormColor("Bleu");
+            fctm.saveParametreCouleur("Bleu");
         }
 
         private void vertToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.bleuToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.rougeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.vertToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.noirToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.standardToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            Accueil.ActiveForm.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.menuStrip1.BackColor = System.Drawing.Color.Turquoise;
-            MessageBox.Show("Enregistrer le changement dans AppConfig.xml");
+            InitializeFormColor("Vert");
+            fctm.saveParametreCouleur("Vert");
         }
 
         private void rougeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.bleuToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.rougeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.vertToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.noirToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.standardToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            Accueil.ActiveForm.BackColor = System.Drawing.Color.LightCoral;
-            this.menuStrip1.BackColor = System.Drawing.Color.Tomato;
-            MessageBox.Show("Enregistrer le changement dans AppConfig.xml");
+            InitializeFormColor("Rouge");
+            fctm.saveParametreCouleur("Rouge");
         }
 
         private void noirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.bleuToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.rougeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.vertToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            this.noirToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.standardToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Unchecked;
-            Accueil.ActiveForm.BackColor = System.Drawing.Color.Black;
-            this.menuStrip1.BackColor = System.Drawing.Color.DarkGray;
-            MessageBox.Show("Enregistrer le changement dans AppConfig.xml");
+            InitializeFormColor("Noir");
+            fctm.saveParametreCouleur("Noir");
         }
 
         private void créerFichierToolStripMenuItem_Click(object sender, EventArgs e)

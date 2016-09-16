@@ -15,6 +15,9 @@ namespace Reperto
         #region Region Global
         public ModeFiche modeFiche;
 
+        public delegate void ChildEvent(string text);
+        public event ChildEvent returnCreatedValue;
+
         int idToUpdate = 0;
 
         FunctionFiches fctn = new FunctionFiches();
@@ -30,6 +33,7 @@ namespace Reperto
         #endregion
 
         #region Constructeurs
+
         public FormulaireFiche()
         {
             InitializeComponent();
@@ -121,29 +125,26 @@ namespace Reperto
         #region Gestion Evenements
         private void button1_Click(object sender, EventArgs e)
         {
-            //if (this.textBox1.Text == "")
-            //{ MessageBox.Show("Name can't be empty"); }
-            //else
-            //{
-                if (this.modeFiche == FormulaireFiche.ModeFiche.CREER){
-                    fctn.fnCreationFiche(this.txtCassette.Text, this.mtxDate.Text, this.cbxTheme1.Text, this.cbxTheme2.Text ,this.txtPersonnes.Text, this.txtLieu.Text, this.txtDescription.Text, this.txtLienVideo.Text, this.mtxDebutSequence.Text);
-                    this.Close();
-                }
+            string createdId = "0";
+            if (this.modeFiche == FormulaireFiche.ModeFiche.CREER){
+                createdId = fctn.fnCreationFiche(this.txtCassette.Text, this.mtxDate.Text, this.cbxTheme1.Text, this.cbxTheme2.Text ,this.txtPersonnes.Text, this.txtLieu.Text, this.txtDescription.Text, this.txtLienVideo.Text, this.mtxDebutSequence.Text);
+                this.returnCreatedValue(createdId);
+                this.Close();
+            }
 
-                if (this.modeFiche == FormulaireFiche.ModeFiche.MODIFIER){
-                    fctn.fnModificationFiche(idToUpdate, this.txtCassette.Text, this.mtxDate.Text, this.cbxTheme1.Text, this.cbxTheme2.Text, this.txtPersonnes.Text, this.txtLieu.Text, this.txtDescription.Text, this.txtLienVideo.Text, this.mtxDebutSequence.Text);
-                    this.Close();
-                }
+            if (this.modeFiche == FormulaireFiche.ModeFiche.MODIFIER){
+                fctn.fnModificationFiche(idToUpdate, this.txtCassette.Text, this.mtxDate.Text, this.cbxTheme1.Text, this.cbxTheme2.Text, this.txtPersonnes.Text, this.txtLieu.Text, this.txtDescription.Text, this.txtLienVideo.Text, this.mtxDebutSequence.Text);
+                this.Close();
+            }
 
-                if (this.modeFiche == FormulaireFiche.ModeFiche.AFFICHER)
-                {
-                    string lien = gfctn.AppRootPath() + this.txtLienVideo.Text.Replace("\\", "/");
-                    int temps = (Convert.ToInt32(this.mtxDebutSequence.Text.Substring(0,2))*60*60)+(Convert.ToInt32(this.mtxDebutSequence.Text.Substring(3,2))*60)+Convert.ToInt32(this.mtxDebutSequence.Text.Substring(6,2));
-                    MediaPlayer mplayer = new MediaPlayer(lien, temps);
-                    mplayer.ShowDialog();
-                }
-                
-            //}
+            if (this.modeFiche == FormulaireFiche.ModeFiche.AFFICHER)
+            {
+                string lien = gfctn.AppRootPath() + this.txtLienVideo.Text.Replace("\\", "/");
+                int temps = (Convert.ToInt32(this.mtxDebutSequence.Text.Substring(0,2))*60*60)+(Convert.ToInt32(this.mtxDebutSequence.Text.Substring(3,2))*60)+Convert.ToInt32(this.mtxDebutSequence.Text.Substring(6,2));
+                MediaPlayer mplayer = new MediaPlayer(lien, temps);
+                mplayer.ShowDialog();
+            }
+            
         }
         #endregion
     }

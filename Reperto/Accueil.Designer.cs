@@ -29,17 +29,6 @@
         private void InitializeComponent()
         {
             this.dgvListeFiches = new System.Windows.Forms.DataGridView();
-            this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCassette = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTheme1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTheme2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPersonne = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLienVideo = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.colLienVideoHidden = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDebutSequenceHidden = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbxFiltre = new System.Windows.Forms.GroupBox();
             this.btnReInit = new System.Windows.Forms.Button();
             this.lblLieu = new System.Windows.Forms.Label();
@@ -80,6 +69,17 @@
             this.gestionDesThèmesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnVisualiser = new System.Windows.Forms.Button();
             this.btnDupliquer = new System.Windows.Forms.Button();
+            this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCassette = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTheme1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTheme2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPersonne = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLienVideo = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.colLienVideoHidden = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDebutSequenceHidden = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListeFiches)).BeginInit();
             this.gbxFiltre.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -113,78 +113,6 @@
             this.dgvListeFiches.Size = new System.Drawing.Size(1075, 265);
             this.dgvListeFiches.TabIndex = 0;
             this.dgvListeFiches.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListeFiches_CellContentClick);
-            // 
-            // colId
-            // 
-            this.colId.HeaderText = "Id";
-            this.colId.Name = "colId";
-            this.colId.ReadOnly = true;
-            this.colId.Visible = false;
-            // 
-            // colCassette
-            // 
-            this.colCassette.HeaderText = "Cassette";
-            this.colCassette.Name = "colCassette";
-            this.colCassette.ReadOnly = true;
-            // 
-            // colDate
-            // 
-            this.colDate.HeaderText = "Date";
-            this.colDate.Name = "colDate";
-            this.colDate.ReadOnly = true;
-            // 
-            // colTheme1
-            // 
-            this.colTheme1.HeaderText = "Theme 1";
-            this.colTheme1.Name = "colTheme1";
-            this.colTheme1.ReadOnly = true;
-            // 
-            // colTheme2
-            // 
-            this.colTheme2.HeaderText = "Theme 2";
-            this.colTheme2.Name = "colTheme2";
-            this.colTheme2.ReadOnly = true;
-            // 
-            // colPersonne
-            // 
-            this.colPersonne.HeaderText = "Qui est-la?";
-            this.colPersonne.Name = "colPersonne";
-            this.colPersonne.ReadOnly = true;
-            // 
-            // colLieu
-            // 
-            this.colLieu.HeaderText = "Lieu";
-            this.colLieu.Name = "colLieu";
-            this.colLieu.ReadOnly = true;
-            // 
-            // colDescription
-            // 
-            this.colDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colDescription.HeaderText = "Description";
-            this.colDescription.Name = "colDescription";
-            this.colDescription.ReadOnly = true;
-            // 
-            // colLienVideo
-            // 
-            this.colLienVideo.HeaderText = "Lien Video";
-            this.colLienVideo.Name = "colLienVideo";
-            this.colLienVideo.ReadOnly = true;
-            this.colLienVideo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colLienVideo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // colLienVideoHidden
-            // 
-            this.colLienVideoHidden.HeaderText = "LienVideoHidden";
-            this.colLienVideoHidden.Name = "colLienVideoHidden";
-            this.colLienVideoHidden.ReadOnly = true;
-            this.colLienVideoHidden.Visible = false;
-            // 
-            // colDebutSequenceHidden
-            // 
-            this.colDebutSequenceHidden.HeaderText = "DebutSequenceHidden";
-            this.colDebutSequenceHidden.Name = "colDebutSequenceHidden";
-            this.colDebutSequenceHidden.ReadOnly = true;
-            this.colDebutSequenceHidden.Visible = false;
             // 
             // gbxFiltre
             // 
@@ -306,27 +234,27 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Qui est la?";
+            this.label3.Text = "Acteur";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Thème 2";
+            this.label2.Text = "Mot Clé";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Thème 1";
+            this.label1.Text = "Mot Clé";
             // 
             // cbxTheme2
             // 
@@ -360,9 +288,9 @@
             this.lblRechercheCassette.AutoSize = true;
             this.lblRechercheCassette.Location = new System.Drawing.Point(6, 20);
             this.lblRechercheCassette.Name = "lblRechercheCassette";
-            this.lblRechercheCassette.Size = new System.Drawing.Size(48, 13);
+            this.lblRechercheCassette.Size = new System.Drawing.Size(44, 13);
             this.lblRechercheCassette.TabIndex = 2;
-            this.lblRechercheCassette.Text = "Cassette";
+            this.lblRechercheCassette.Text = "Support";
             // 
             // txtRechCassette
             // 
@@ -568,6 +496,78 @@
             this.btnDupliquer.UseVisualStyleBackColor = true;
             this.btnDupliquer.Click += new System.EventHandler(this.btnDupliquer_Click);
             // 
+            // colId
+            // 
+            this.colId.HeaderText = "Id";
+            this.colId.Name = "colId";
+            this.colId.ReadOnly = true;
+            this.colId.Visible = false;
+            // 
+            // colCassette
+            // 
+            this.colCassette.HeaderText = "Support";
+            this.colCassette.Name = "colCassette";
+            this.colCassette.ReadOnly = true;
+            // 
+            // colDate
+            // 
+            this.colDate.HeaderText = "Date";
+            this.colDate.Name = "colDate";
+            this.colDate.ReadOnly = true;
+            // 
+            // colTheme1
+            // 
+            this.colTheme1.HeaderText = "Mot Clé";
+            this.colTheme1.Name = "colTheme1";
+            this.colTheme1.ReadOnly = true;
+            // 
+            // colTheme2
+            // 
+            this.colTheme2.HeaderText = "Mot Clé";
+            this.colTheme2.Name = "colTheme2";
+            this.colTheme2.ReadOnly = true;
+            // 
+            // colPersonne
+            // 
+            this.colPersonne.HeaderText = "Acteurs";
+            this.colPersonne.Name = "colPersonne";
+            this.colPersonne.ReadOnly = true;
+            // 
+            // colLieu
+            // 
+            this.colLieu.HeaderText = "Lieu";
+            this.colLieu.Name = "colLieu";
+            this.colLieu.ReadOnly = true;
+            // 
+            // colDescription
+            // 
+            this.colDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colDescription.HeaderText = "Description";
+            this.colDescription.Name = "colDescription";
+            this.colDescription.ReadOnly = true;
+            // 
+            // colLienVideo
+            // 
+            this.colLienVideo.HeaderText = "Lien Video";
+            this.colLienVideo.Name = "colLienVideo";
+            this.colLienVideo.ReadOnly = true;
+            this.colLienVideo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colLienVideo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // colLienVideoHidden
+            // 
+            this.colLienVideoHidden.HeaderText = "LienVideoHidden";
+            this.colLienVideoHidden.Name = "colLienVideoHidden";
+            this.colLienVideoHidden.ReadOnly = true;
+            this.colLienVideoHidden.Visible = false;
+            // 
+            // colDebutSequenceHidden
+            // 
+            this.colDebutSequenceHidden.HeaderText = "DebutSequenceHidden";
+            this.colDebutSequenceHidden.Name = "colDebutSequenceHidden";
+            this.colDebutSequenceHidden.ReadOnly = true;
+            this.colDebutSequenceHidden.Visible = false;
+            // 
             // Accueil
             // 
             this.AcceptButton = this.btnRechercher;
@@ -620,17 +620,6 @@
         private System.Windows.Forms.TextBox txtAnnee;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbxMois;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCassette;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTheme1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTheme2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPersonne;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colLieu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDescription;
-        private System.Windows.Forms.DataGridViewLinkColumn colLienVideo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colLienVideoHidden;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDebutSequenceHidden;
         private System.Windows.Forms.Button btnReInit;
         private System.Windows.Forms.Label lblLieu;
         private System.Windows.Forms.Label lblMotCle;
@@ -650,6 +639,17 @@
         private System.Windows.Forms.ToolStripMenuItem créerFichierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ouvrirFichierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supprimerFichierToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCassette;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTheme1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTheme2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPersonne;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLieu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDescription;
+        private System.Windows.Forms.DataGridViewLinkColumn colLienVideo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLienVideoHidden;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDebutSequenceHidden;
     }
 }
 

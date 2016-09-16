@@ -52,7 +52,7 @@
             this.groupBox1.Size = new System.Drawing.Size(436, 126);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Créer Thème";
+            this.groupBox1.Text = "Créer Mot Clé";
             // 
             // txtCreationTheme
             // 
@@ -81,7 +81,7 @@
             this.groupBox2.Size = new System.Drawing.Size(436, 126);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Modifier Thème";
+            this.groupBox2.Text = "Modifier Mot Clé";
             // 
             // cbxListThemesModif
             // 
@@ -117,7 +117,7 @@
             this.groupBox3.Size = new System.Drawing.Size(436, 126);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Supprimer Thème";
+            this.groupBox3.Text = "Supprimer Mot Clé";
             // 
             // cbxListThemesSupp
             // 
@@ -146,7 +146,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormulaireTheme";
-            this.Text = "FormulaireTheme";
+            this.Text = "Formulaire Mots Clé";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

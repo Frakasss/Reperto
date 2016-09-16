@@ -42,7 +42,7 @@ namespace Reperto
         #endregion
 
         #region Gestion des Evenements
-        /// Bouton Créer Theme
+            /// Bouton Créer Mot Clé
             private void btnCreationTheme_Click(object sender, EventArgs e)
             {
                 if (this.txtCreationTheme.Text != "")
@@ -56,7 +56,7 @@ namespace Reperto
                 }
             }
 
-        /// Bouton Modifier Theme
+            /// Bouton Modifier Mot Clé
             private void btnModifierTheme_Click(object sender, EventArgs e)
             {
                 if (this.cbxListThemesModif.Text != "")
@@ -88,7 +88,7 @@ namespace Reperto
 
             }
 
-        /// Bouton Supprimer Theme
+            /// Bouton Supprimer Mot Clé
             private void btnSupprimerTheme_Click(object sender, EventArgs e)
             {
                 if (this.cbxListThemesModif.Text != "")

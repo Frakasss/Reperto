@@ -15,9 +15,7 @@ namespace Reperto
 {
     static class Program
     {
-        /// <summary>
         /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
@@ -29,34 +27,17 @@ namespace Reperto
 
     public class GlobalFunctions
     {
-        /// <summary>
         /// Retourne le chemin, depuis la racine, de l'application
-        /// </summary>
-        /// <returns></returns>
         public string AppDrive()
         {
             return (AppDomain.CurrentDomain.BaseDirectory).Substring(0,3).Replace("\\", "/");
         }
-        /// <summary>
+
         /// Retourne le chemin, depuis la racine, de l'application
-        /// </summary>
-        /// <returns></returns>
         public string AppRootPath()
         {
             return (AppDomain.CurrentDomain.BaseDirectory).Replace("\\", "/");
         }
-        /*
-        /// <summary>
-        /// Retourne les "length" dernier caractères d'une chaine
-        /// </summary>
-        /// <param name="value"></param>
-        /// <param name="length"></param>
-        /// <returns></returns>
-        public string myRight(this string value, int length)
-        {
-            if (String.IsNullOrEmpty(value)) return string.Empty;
-            return value.Length <= length ? value : value.Substring(value.Length - length);
-        }*/
     }
 
     public class Fiche
@@ -95,34 +76,22 @@ namespace Reperto
         GlobalFunctions gfctn = new GlobalFunctions();
 
         #region CRUD Fiche
-            /// <summary>
             /// Creation d'une nouvelle fiche
-            /// </summary>
-            /// <param name="Cassette"></param>
-            /// <param name="Date"></param>
-            /// <param name="Theme"></param>
-            /// <param name="SousTheme"></param>
-            /// <param name="Personne"></param>
-            /// <param name="Description"></param>
-            /// <param name="LienVideo"></param>
-            /// <param name="TempsDebutSequence"></param>
             public string fnCreationFiche(String Cassette, String Date, String Theme, String SousTheme, String Personne, String Lieu, String Description, String LienVideo, String TempsDebutSequence)
             {
-            
                 Int32 id = 0;
                 Int32 tmpId = 0;
                 //### calcul de l'Id ###
                 XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
-                XElement collec = xmlDoc.Element("root");
+                XElement collec = xmlDoc.Element("root").Element("fiches");
 
                 var records = from myCollec in collec.Elements("myFiche")
                               orderby (int)myCollec.Element("id")
                               select myCollec;
-                foreach (var myCollection in records)
-                {
+
+                foreach (var myCollection in records){
                     tmpId = tmpId + 1;
-                    if (myCollection.Element("id").Value != tmpId.ToString())
-                    {
+                    if (myCollection.Element("id").Value != tmpId.ToString()){
                         id = tmpId;
                         break;
                     }
@@ -131,38 +100,27 @@ namespace Reperto
             
 
                 //### enregistrement fiche ###
-                xmlDoc.Element("root").Add(new XElement("myFiche",
-                                           new XElement("id", id.ToString()),
-                                           new XElement("cassette", Cassette),
-                                           new XElement("date", Date),
-                                           new XElement("theme1", Theme),
-                                           new XElement("theme2", SousTheme),
-                                           new XElement("personne", Personne),
-                                           new XElement("lieu", Lieu),
-                                           new XElement("description", Description),
-                                           new XElement("lienVideo", LienVideo),
-                                           new XElement("tempsDebutSequence", TempsDebutSequence)));
+                xmlDoc.Element("root").Element("fiches").Add(new XElement("myFiche",
+                                                             new XElement("id", id.ToString()),
+                                                             new XElement("cassette", Cassette),
+                                                             new XElement("date", Date),
+                                                             new XElement("theme1", Theme),
+                                                             new XElement("theme2", SousTheme),
+                                                             new XElement("personne", Personne),
+                                                             new XElement("lieu", Lieu),
+                                                             new XElement("description", Description),
+                                                             new XElement("lienVideo", LienVideo),
+                                                             new XElement("tempsDebutSequence", TempsDebutSequence)));
 
                 xmlDoc.Save(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
                 return id.ToString();
             }
 
-            /// <summary>
             /// Modification d'une fiche existante
-            /// </summary>
-            /// <param name="nodeToUpdate"></param>
-            /// <param name="Cassette"></param>
-            /// <param name="Date"></param>
-            /// <param name="Theme"></param>
-            /// <param name="SousTheme"></param>
-            /// <param name="Personne"></param>
-            /// <param name="Description"></param>
-            /// <param name="LienVideo"></param>
-            /// <param name="TempsDebutSequence"></param>
             public void fnModificationFiche(Int32 nodeToUpdate, String Cassette, String Date, String Theme1, String Theme2, String Personne, String Lieu, String Description, String LienVideo, String TempsDebutSequence)
             {
                 XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
-                XElement collec = xmlDoc.Element("root");
+                XElement collec = xmlDoc.Element("root").Element("fiches");
             
                 var records = from myCollection in collec.Elements("myFiche")
                               where (int)myCollection.Element("id") == nodeToUpdate
@@ -172,29 +130,26 @@ namespace Reperto
                 records.Remove();
 
                 //Insert Record
-                xmlDoc.Element("root").Add(new XElement("myFiche",
-                                           new XElement("id", nodeToUpdate.ToString()),
-                                           new XElement("cassette", Cassette),
-                                           new XElement("date", Date),
-                                           new XElement("theme1", Theme1),
-                                           new XElement("theme2", Theme2),
-                                           new XElement("personne", Personne),
-                                           new XElement("lieu", Lieu),
-                                           new XElement("description", Description),
-                                           new XElement("lienVideo", LienVideo),
-                                           new XElement("tempsDebutSequence", TempsDebutSequence)));
+                xmlDoc.Element("root").Element("fiches").Add(new XElement("myFiche",
+                                                             new XElement("id", nodeToUpdate.ToString()),
+                                                             new XElement("cassette", Cassette),
+                                                             new XElement("date", Date),
+                                                             new XElement("theme1", Theme1),
+                                                             new XElement("theme2", Theme2),
+                                                             new XElement("personne", Personne),
+                                                             new XElement("lieu", Lieu),
+                                                             new XElement("description", Description),
+                                                             new XElement("lienVideo", LienVideo),
+                                                             new XElement("tempsDebutSequence", TempsDebutSequence)));
 
                 xmlDoc.Save(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
             }
 
-            /// <summary>
             /// Suppression d'une fiche
-            /// </summary>
-            /// <param name="nodeToDelete"></param>
             public void fnSuppressionFiche(int nodeToDelete)
             {
                 XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
-                XElement collec = xmlDoc.Element("root");
+                XElement collec = xmlDoc.Element("root").Element("fiches");
 
                 var records = from myCollection in collec.Elements("myFiche")
                               where (int)myCollection.Element("id") == nodeToDelete
@@ -213,7 +168,7 @@ namespace Reperto
             {
                 List<Fiche> tabFiche = new List<Fiche>();
                 XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
-                XElement collec = xmlDoc.Element("root");
+                XElement collec = xmlDoc.Element("root").Element("fiches");
 
                 var records = from myCollection in collec.Elements("myFiche")
                               select myCollection;
@@ -318,7 +273,7 @@ namespace Reperto
             {
                 int cpt = 0;
                 XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
-                XElement collec = xmlDoc.Element("root");
+                XElement collec = xmlDoc.Element("root").Element("fiches");
 
                 var records = from myCollection in collec.Elements("myFiche")
                               select myCollection;
@@ -400,12 +355,8 @@ namespace Reperto
                           select myCollection;
 
 
-
-                foreach (var myData in records)
-                {
-                    cpt = cpt + 1;
-                }
-
+                foreach (var myData in records) { cpt = cpt + 1; }
+                
                 return cpt;
             }
 
@@ -414,7 +365,7 @@ namespace Reperto
             {
                 Fiche myFiche = new Fiche();
                 XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
-                XElement collec = xmlDoc.Element("root");
+                XElement collec = xmlDoc.Element("root").Element("fiches");
 
                 var records = from myCollection in collec.Elements("myFiche")
                               where (int)myCollection.Element("id") == nodeToLoad
@@ -446,49 +397,37 @@ namespace Reperto
         FunctionFiches fctn = new FunctionFiches();
 
         #region CRUD Theme
-            /// <summary>
             /// Creation d'un nouveau Theme
-            /// </summary>
-            /// <param name="nomTheme"></param>
             public void fnCreationTheme(String nomTheme)
             {
-                XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/AppConfig.xml");
-                //### enregistrement fiche ###
-                xmlDoc.Element("root").Add(new XElement("theme",
-                                           new XElement("name", nomTheme)));
+                XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");//
+                xmlDoc.Element("root").Element("themes").Add(new XElement("theme",
+                                                             new XElement("name", nomTheme)));
 
-                xmlDoc.Save(gfctn.AppRootPath() + "MyDB/AppConfig.xml");
+                xmlDoc.Save(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");//
             }
 
-            /// <summary>
             /// Modification d'un thème
-            /// </summary>
-            /// <param name="oldName"></param>
-            /// <param name="newName"></param>
             public void fnModificationTheme(string oldName, string newName)
             {
-                //On modifie dans le fichier AppConfig.xml
-                XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/AppConfig.xml");
-                XElement theme = xmlDoc.Element("root");
+                XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
 
-                var records = from myTheme in theme.Elements("theme")
+                XElement themes = xmlDoc.Element("root").Element("themes");
+                XElement fiches = xmlDoc.Element("root").Element("fiches");
+
+                var records = from myTheme in themes.Elements("theme")
                               where myTheme.Element("name").Value == oldName
                               select myTheme;
                 records.Remove();
 
-                xmlDoc.Element("root").Add(new XElement("theme",
+                xmlDoc.Element("root").Element("themes").Add(new XElement("theme",
                            new XElement("name", newName)));
 
-                xmlDoc.Save(gfctn.AppRootPath() + "MyDB/AppConfig.xml");
-
-
-                //On modifie dans le fichier MyXmlDatabase.xml
-                xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
-                XElement collec = xmlDoc.Element("root");
-
-                records = from myCollec in collec.Elements("myFiche")
+                records = from myCollec in fiches.Elements("myFiche")
                           where myCollec.Element("theme1").Value == oldName
                           select myCollec;
+
+                xmlDoc.Save(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");//
 
                 foreach (var myCollection in records)
                 {
@@ -504,7 +443,7 @@ namespace Reperto
                                              myCollection.Element("tempsDebutSequence").Value);
                 }
 
-                records = from myCollec in collec.Elements("myFiche")
+                records = from myCollec in fiches.Elements("myFiche")
                           where myCollec.Element("theme2").Value == oldName
                           select myCollec;
 
@@ -521,100 +460,54 @@ namespace Reperto
                                              myCollection.Element("lienVideo").Value,
                                              myCollection.Element("tempsDebutSequence").Value);
                 }
-
-
-
             }
 
-            /// <summary>
             /// Suppression d'un thème
-            /// </summary>
-            /// <returns></returns>
             public void fnSuppressionTheme(string themeToDelete) 
             {
                 //Suppression du theme dans AppConfig.xml
-                XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/AppConfig.xml");
-                XElement theme = xmlDoc.Element("root");
+                XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");//
+                XElement theme = xmlDoc.Element("root").Element("themes");
 
                 var records = from myTheme in theme.Elements("theme")
                               where myTheme.Element("name").Value == themeToDelete
                               select myTheme;
                 records.Remove();
-                xmlDoc.Save(gfctn.AppRootPath() + "MyDB/AppConfig.xml");
-
-                //remplacement du theme1 dans MyXmlDB.xml
-                xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
-                XElement collec = xmlDoc.Element("root");
-
-                records = from myCollec in collec.Elements("myFiche")
-                              where myCollec.Element("theme1").Value == themeToDelete
-                              select myCollec;
-                
-                foreach (var myCollection in records)
-                {
-                    fctn.fnModificationFiche(Convert.ToInt32(myCollection.Element("id").Value),
-                                             myCollection.Element("cassette").Value,
-                                             myCollection.Element("date").Value,
-                                             "",
-                                             myCollection.Element("theme2").Value,
-                                             myCollection.Element("personne").Value,
-                                             myCollection.Element("lieu").Value,
-                                             myCollection.Element("description").Value,
-                                             myCollection.Element("lienVideo").Value,
-                                             myCollection.Element("tempsDebutSequence").Value);
-                }
-
-                records = from myCollec in collec.Elements("myFiche")
-                          where myCollec.Element("theme2").Value == themeToDelete
-                          select myCollec;
-
-                foreach (var myCollection in records)
-                {
-                    fctn.fnModificationFiche(Convert.ToInt32(myCollection.Element("id").Value),
-                                             myCollection.Element("cassette").Value,
-                                             myCollection.Element("date").Value,
-                                             myCollection.Element("theme1").Value,
-                                             "",
-                                             myCollection.Element("personne").Value,
-                                             myCollection.Element("lieu").Value,
-                                             myCollection.Element("description").Value,
-                                             myCollection.Element("lienVideo").Value,
-                                             myCollection.Element("tempsDebutSequence").Value);
-                }
+                xmlDoc.Save(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");//
             }
         #endregion
 
         #region Selection Theme
-        public List<string> fnSelectThemes()
+            //Selection de tous les themes
+            public List<string> fnSelectThemes()
         {
             List<string> listOfThemes = new List<string>();
-            XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/AppConfig.xml");
-            XElement collec = xmlDoc.Element("root");
+            XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
+            XElement collec = xmlDoc.Element("root").Element("themes");
 
             var records = from myTheme in collec.Elements("theme")
                           orderby myTheme.Element("name").Value
                           select myTheme;
 
-            foreach (var myData in records)
-            {
+            foreach (var myData in records){
                 listOfThemes.Add(myData.Element("name").Value);
             }
 
             return listOfThemes;
         }
 
-        public int fnSelectCountTheme(string theme)
+            //Vérifie que le theme passé en param n'existe pas déja
+            public int fnSelectCountTheme(string theme)
         {
             int count = 0;
-            XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/AppConfig.xml");
-            XElement collec = xmlDoc.Element("root");
+            XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/MyXmlDB.xml");
+            XElement collec = xmlDoc.Element("themes");
 
             var records = from myTheme in collec.Elements("theme")
                           where myTheme.Element("name").Value == theme
                           select myTheme;
 
-            foreach (var myData in records)
-            {
+            foreach (var myData in records){
                 count = count + 1;
             }
             
@@ -623,5 +516,38 @@ namespace Reperto
         #endregion
     }
 
+    public class FunctionMenu 
+    {
 
+        GlobalFunctions gfctn = new GlobalFunctions();
+
+        public void saveParametreCouleur(string selectedColor)
+        {
+            XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/AppConfig.xml");
+
+            XElement couleurApp = xmlDoc.Element("root");
+
+            var records = from myTheme in couleurApp.Elements("couleurApp").Elements("couleurSelectionnee") select myTheme;
+            records.Remove();
+
+            xmlDoc.Element("root").Element("couleurApp").Add(new XElement("couleurSelectionnee", selectedColor));
+
+            xmlDoc.Save(gfctn.AppRootPath() + "MyDB/AppConfig.xml");//
+        }
+
+        public string selectionCouleur() { 
+            string couleur = "Standard";
+            XDocument xmlDoc = XDocument.Load(gfctn.AppRootPath() + "MyDB/AppConfig.xml");
+            XElement collec = xmlDoc.Element("root").Element("couleurApp");
+
+            var records = from myTheme in collec.Elements("couleurSelectionnee") select myTheme;
+
+            foreach (string myData in records)
+            {
+                couleur = myData;
+            }
+            return couleur;
+        }
+    
+    }
 }
