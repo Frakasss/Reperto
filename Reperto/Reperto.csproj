@@ -79,6 +79,18 @@
     <Compile Include="FormulaireFiche.Designer.cs">
       <DependentUpon>FormulaireFiche.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormulaireNouvelleDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireNouvelleDB.Designer.cs">
+      <DependentUpon>FormulaireNouvelleDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaireOuvrir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireOuvrir.Designer.cs">
+      <DependentUpon>FormulaireOuvrir.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormulaireTheme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +113,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormulaireFiche.resx">
       <DependentUpon>FormulaireFiche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaireNouvelleDB.resx">
+      <DependentUpon>FormulaireNouvelleDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaireOuvrir.resx">
+      <DependentUpon>FormulaireOuvrir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulaireTheme.resx">
       <DependentUpon>FormulaireTheme.cs</DependentUpon>

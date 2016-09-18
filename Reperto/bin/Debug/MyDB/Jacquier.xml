@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <themes>
+    <theme>
+      <name>Appartement</name>
+    </theme>
+    <theme>
+      <name>Ballade</name>
+    </theme>
+    <theme>
+      <name>Bois</name>
+    </theme>
+    <theme>
+      <name>Bricolage</name>
+    </theme>
+    <theme>
+      <name>Collège</name>
+    </theme>
+    <theme>
+      <name>Concert</name>
+    </theme>
+    <theme>
+      <name>Concert BigBand Forbach</name>
+    </theme>
+    <theme>
+      <name>Concert BigBand l'Hopital</name>
+    </theme>
+    <theme>
+      <name>Concert CNR</name>
+    </theme>
+    <theme>
+      <name>Concert Conservatoire St Avold</name>
+    </theme>
+    <theme>
+      <name>Concert harmonie de Thionville</name>
+    </theme>
+    <theme>
+      <name>Concert Harmonie Forbach</name>
+    </theme>
+    <theme>
+      <name>Concert Harmonie METZ</name>
+    </theme>
+    <theme>
+      <name>Concert Harmonie StAvold</name>
+    </theme>
+    <theme>
+      <name>Concert Harmonie Thionville</name>
+    </theme>
+    <theme>
+      <name>Concert Missing The Schoolbus</name>
+    </theme>
+    <theme>
+      <name>Concert Rhesus+</name>
+    </theme>
+    <theme>
+      <name>Danse</name>
+    </theme>
+    <theme>
+      <name>Détente</name>
+    </theme>
+    <theme>
+      <name>Détente Piscine</name>
+    </theme>
+    <theme>
+      <name>Détente Repas</name>
+    </theme>
+    <theme>
+      <name>Diplôme</name>
+    </theme>
+    <theme>
+      <name>Divers</name>
+    </theme>
+    <theme>
+      <name>Ecole</name>
+    </theme>
+    <theme>
+      <name>Fête de Noël</name>
+    </theme>
+    <theme>
+      <name>Fête de Pâques</name>
+    </theme>
+    <theme>
+      <name>Fête des Pères / Mères</name>
+    </theme>
+    <theme>
+      <name>Fête du slip</name>
+    </theme>
+    <theme>
+      <name>Fête du Village</name>
+    </theme>
+    <theme>
+      <name>Fête Halloween</name>
+    </theme>
+    <theme>
+      <name>Film 16mm</name>
+    </theme>
+    <theme>
+      <name>Lycée</name>
+    </theme>
+    <theme>
+      <name>Maison</name>
+    </theme>
+    <theme>
+      <name>Mer</name>
+    </theme>
+    <theme>
+      <name>Moto</name>
+    </theme>
+    <theme>
+      <name>Musique</name>
+    </theme>
+    <theme>
+      <name>Randonnée</name>
+    </theme>
+    <theme>
+      <name>Répétition</name>
+    </theme>
+    <theme>
+      <name>Ski</name>
+    </theme>
+    <theme>
+      <name>Spectacle</name>
+    </theme>
+    <theme>
+      <name>Sport</name>
+    </theme>
+    <theme>
+      <name>Stage Perpignan</name>
+    </theme>
+    <theme>
+      <name>test nouveau theme</name>
+    </theme>
+    <theme>
+      <name>test002</name>
+    </theme>
+    <theme>
+      <name>Université</name>
+    </theme>
+    <theme>
+      <name>Vacances</name>
+    </theme>
+    <theme>
+      <name>Visite</name>
+    </theme>
+    <theme>
+      <name>Voiture</name>
+    </theme>
+    <theme>
+      <name>Voyage</name>
+    </theme>
+  </themes>
+  <fiches>
+    <myFiche>
+      <id>0</id>
+      <cassette>C001</cassette>
+      <date>31-10-2004</date>
+      <theme1>Vacances</theme1>
+      <theme2></theme2>
+      <personne>Jacques, Janine, Jacquier, Picq, Riri</personne>
+      <lieu>ST ETIENNE, Maison des Petites Soeurs</lieu>
+      <description>Décès Pierre AVRIL - Salle des fêtes</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>1</id>
+      <cassette>C007</cassette>
+      <date>15-02-2005</date>
+      <theme1>Vacances</theme1>
+      <theme2>Ski</theme2>
+      <personne>Delphine, Pascale, Jacquier</personne>
+      <lieu>MONTAGNY</lieu>
+      <description>Vues du village - Luge</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>2</id>
+      <cassette>C007</cassette>
+      <date>19-02-2005</date>
+      <theme1>Vacances</theme1>
+      <theme2>Ski</theme2>
+      <personne>Jo, Pascale, Michel, Stéphane, Delphine, Jacquier</personne>
+      <lieu>MONTAGNY</lieu>
+      <description>Vues du village - Guitare chez les BLANC - Oiseaux en lierté - Chargement voiture pour le ski - Enfants dans la chambre - Il neige au village</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>3</id>
+      <cassette>C007</cassette>
+      <date>20-02-2005</date>
+      <theme1>Vacances</theme1>
+      <theme2>Ski</theme2>
+      <personne>Jo, Pascale, Michel, Stéphane, Delphine, Farissier, Jacquier</personne>
+      <lieu>MONTAGNY</lieu>
+      <description>Départ après préparation de Michel et Stéphane - Chez Jacquier Farissier</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>4</id>
+      <cassette>C009</cassette>
+      <date>23-02-2005</date>
+      <theme1>Vacances</theme1>
+      <theme2>Ski</theme2>
+      <personne>Jo, Pascale, Michel, Stéphane, Delphine, Jacquier</personne>
+      <lieu>COURCHEVEL 1650</lieu>
+      <description>Jo en Snowblade, Pascale - Babeth, Cédric, Cyril, Mathilde, Céline - Vues sur la station</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>5</id>
+      <cassette>C008</cassette>
+      <date>21-04-2005</date>
+      <theme1>Vacances</theme1>
+      <theme2>Détente</theme2>
+      <personne>Pascale, Jacquier, Regis</personne>
+      <lieu>COLOMBIER</lieu>
+      <description>Vacances de Printemps - Jeux enfants sur la pelouse, grimpent dans les arbres - Pascale, Babeth, Christine</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>6</id>
+      <cassette>C018</cassette>
+      <date>02-08-2005</date>
+      <theme1>Maison</theme1>
+      <theme2>Vacances</theme2>
+      <personne>Jo, Pascale, Jacquier</personne>
+      <lieu>ALTVILLER</lieu>
+      <description>Vacances à ALTVILLER avec les Jacquier - Apparition Claire et Hélène ALIEVI</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>7</id>
+      <cassette>C035</cassette>
+      <date>27-02-2006</date>
+      <theme1>Vacances</theme1>
+      <theme2>Ski</theme2>
+      <personne>Jo, Pascale, Michel, Stéphane, Delphine, Farissier, Jacquier</personne>
+      <lieu>MONTAGNY</lieu>
+      <description>Delphine joue aux cartes avec les petits - Maison des BLANC - Oiseaux - Dammage avec Frank ROCHE - Delphine sax - Crèpes - Départ Michel et Stéphane</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>8</id>
+      <cassette>C041</cassette>
+      <date>29-04-2006</date>
+      <theme1>Vacances</theme1>
+      <theme2>Détente Repas</theme2>
+      <personne>Jacques, Janine, Jacquier, Picq, Clar, Regis</personne>
+      <lieu>ST GELY, Auberge</lieu>
+      <description>Noces d'Or Jacques et Janine</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>9</id>
+      <cassette>C041</cassette>
+      <date>30-04-2006</date>
+      <theme1>Vacances</theme1>
+      <theme2>Ballade</theme2>
+      <personne>Jacques, Janine, Jacquier, Picq</personne>
+      <lieu>BAGNOLS</lieu>
+      <description>Concluses</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>10</id>
+      <cassette>C041</cassette>
+      <date>03-05-2006</date>
+      <theme1>Vacances</theme1>
+      <theme2>Détente Repas</theme2>
+      <personne>Jacquier, Picq</personne>
+      <lieu>COLOMBIER</lieu>
+      <description>Barbecue</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>11</id>
+      <cassette>C063</cassette>
+      <date>05-04-2007</date>
+      <theme1>Vacances</theme1>
+      <theme2>Détente Repas</theme2>
+      <personne>Jacquier, Delphine, Jacques, Riri</personne>
+      <lieu>BAGNOLS</lieu>
+      <description>Recherche des Œufs - Barbecue (Jacques) - Repas Famille</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>12</id>
+      <cassette>C078</cassette>
+      <date>03-08-2007</date>
+      <theme1>Vacances</theme1>
+      <theme2>Ballade</theme2>
+      <personne>Picq, Jacquier, Clar</personne>
+      <lieu>VILLEFORT, Lac de Villefort</lieu>
+      <description>Pique Nique - Tour du Lac - Baignade</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>13</id>
+      <cassette>C078</cassette>
+      <date>04-08-2007</date>
+      <theme1>Vacances</theme1>
+      <theme2>Détente Repas</theme2>
+      <personne>Picq, Jacquier, Clar</personne>
+      <lieu>COLOMBIER</lieu>
+      <description>Paëlla chez Stéphane</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>14</id>
+      <cassette>C089</cassette>
+      <date>20-02-2008</date>
+      <theme1>Vacances</theme1>
+      <theme2>Ski</theme2>
+      <personne>Jacquier, Clar, Lucille</personne>
+      <lieu>MONTAGNY</lieu>
+      <description>Gouter au gite</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>15</id>
+      <cassette>C089</cassette>
+      <date>21-02-2008</date>
+      <theme1>Vacances</theme1>
+      <theme2>Ski</theme2>
+      <personne>Jacquier, Clar, Lucille</personne>
+      <lieu>MONTAGNY</lieu>
+      <description>Vin chaud</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>16</id>
+      <cassette>C104</cassette>
+      <date>07-08-2008</date>
+      <theme1>Vacances</theme1>
+      <theme2>Détente Repas</theme2>
+      <personne>Jo, Pascale, Jacquier</personne>
+      <lieu>COLOMBIER</lieu>
+      <description>Barbecue arrosage des 3 BAC : Delphine, Lucile, Cèdric</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>17</id>
+      <cassette>C105</cassette>
+      <date>15-08-2008</date>
+      <theme1>Vacances</theme1>
+      <theme2>Ballade</theme2>
+      <personne>Jo, Pascale, Jacquier</personne>
+      <lieu>BAGNOLS</lieu>
+      <description>Ballade du Menhir</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>18</id>
+      <cassette>C105</cassette>
+      <date>17-08-2008</date>
+      <theme1>Vacances</theme1>
+      <theme2>Détente Repas</theme2>
+      <personne>Jo, Pascale, Farrissier, Clar, Jacquier</personne>
+      <lieu>COLOMBIER</lieu>
+      <description>Pêche à la truite - Barbecue chez Stéphane et Séverine</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>19</id>
+      <cassette>C120</cassette>
+      <date>16-04-2009</date>
+      <theme1>Vacances</theme1>
+      <theme2></theme2>
+      <personne>Jo, Pascale, Jacquier</personne>
+      <lieu>COLOMBIER</lieu>
+      <description>Anniversaires Jo et Pascale</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>20</id>
+      <cassette>C129</cassette>
+      <date>14-08-2009</date>
+      <theme1>Vacances</theme1>
+      <theme2>Détente Repas</theme2>
+      <personne>Jo, Pascale, Jacquier</personne>
+      <lieu>COLOMBIER</lieu>
+      <description>Soirée avec André et Nadette - Michel et Amélie</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>21</id>
+      <cassette>C136</cassette>
+      <date>18-04-2010</date>
+      <theme1>Vacances</theme1>
+      <theme2>Détente Repas</theme2>
+      <personne>Farissier, Picq, Jacquier, Clar, Regis, Avril</personne>
+      <lieu>COLOMBIER, Chez Jacquier</lieu>
+      <description>Paëlla</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+  </fiches>
+</root>

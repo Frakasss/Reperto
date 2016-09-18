@@ -300,6 +300,7 @@ namespace Reperto
             }
         }
 
+        // Clic menu couleur 'Standard'
         private void standardToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InitializeFormColor("Standard");
@@ -307,43 +308,48 @@ namespace Reperto
             
         }
 
+        // Clic menu couleur 'bleu'
         private void bleuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InitializeFormColor("Bleu");
             fctm.saveParametreCouleur("Bleu");
         }
 
+        // Clic menu couleur 'vert'
         private void vertToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InitializeFormColor("Vert");
             fctm.saveParametreCouleur("Vert");
         }
 
+        // Clic menu couleur 'rouge'
         private void rougeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InitializeFormColor("Rouge");
             fctm.saveParametreCouleur("Rouge");
         }
 
+        // Clic menu couleur 'noir'
         private void noirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InitializeFormColor("Noir");
             fctm.saveParametreCouleur("Noir");
         }
 
+        // Clic menu créer fichier
         private void créerFichierToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Créer nouveau fichier xml et le déclarer dans AppConfig.xml");
+            FormulaireNouvelleDB frmDB = new FormulaireNouvelleDB(txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
+            frmDB.Show();
+            FillDatagridview(idToSelect, txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
         }
 
+        // Clic menu ouvrir
         private void ouvrirFichierToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Rechercher un fichier xml, puis effectuer une vérification. \n Si ok, l'ajouter à AppConfig.xml et le definir par défaut.");
-        }
-
-        private void supprimerFichierToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Rechercher un fichier et le supprimer avec demande de confirmation");
+            FormulaireOuvrir formOuverture = new FormulaireOuvrir();
+            formOuverture.Show();
+            FillDatagridview(txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
         }
 
     }

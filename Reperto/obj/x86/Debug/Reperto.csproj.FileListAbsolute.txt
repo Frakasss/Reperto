@@ -48,3 +48,5 @@ D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.FormulaireThe
 D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.MediaPlayer.resources
 D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.Properties.Resources.resources
 D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.csproj.GenerateResource.Cache
+D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.FormulaireNouvelleDB.resources
+D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.FormulaireOuvrir.resources
