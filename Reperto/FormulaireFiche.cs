@@ -17,6 +17,7 @@ namespace Reperto
 
         public delegate void ChildEvent(string text);
         public event ChildEvent returnCreatedValue;
+        private void setActorList(string s) { txtPersonnes.Text = s; }
 
         int idToUpdate = 0;
 
@@ -146,6 +147,15 @@ namespace Reperto
             }
             
         }
+
+        private void btnAjoutActeur_Click(object sender, EventArgs e)
+        {
+            FormulaireActeurs formActeur = new FormulaireActeurs(this.txtPersonnes.Text);
+            formActeur.returnActors += new FormulaireActeurs.ChildEvent(this.setActorList);
+            formActeur.Show();
+        }
         #endregion
+
+
     }
 }

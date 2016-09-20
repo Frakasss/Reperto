@@ -15,6 +15,8 @@ namespace Reperto
         #region global var
             GlobalFunctions gfctn = new GlobalFunctions();
             FunctionDatabaseFile fndb = new FunctionDatabaseFile();
+            public delegate void ChildEvent();
+            public event ChildEvent activateRefresh;
         #endregion
 
         #region contructeurs
@@ -25,32 +27,32 @@ namespace Reperto
             }
         #endregion
 
-        private void InitializeComboBox(){
-            DirectoryInfo dir = new DirectoryInfo(gfctn.AppRootPath() + "MyDB/");
-            FileInfo[] fichiers = dir.GetFiles();
+            #region fonctions
+            private void InitializeComboBox(){
+                DirectoryInfo dir = new DirectoryInfo(gfctn.AppRootPath() + "Reperto/BasesDeDonnees/");
+                FileInfo[] fichiers = dir.GetFiles();
 
-            foreach (FileInfo fichier in fichiers)
-            {
-                if (fichier.Name != "AppConfig.xml")
+                foreach (FileInfo fichier in fichiers)
                 {
                     string myExtension = fichier.Name.Substring(fichier.Name.Length - 4);
-                    if(myExtension.ToLower() == ".xml"){
-                        cbxFichiers.Items.Add(fichier.Name);
-                    }
+                    if (myExtension.ToLower() == ".xml") { cbxFichiers.Items.Add(fichier.Name); }
                 }
+                cbxFichiers.SelectedIndex = cbxFichiers.FindStringExact(fndb.currentDatabase());
             }
-            cbxFichiers.SelectedIndex = cbxFichiers.FindStringExact(fndb.currentDatabase());
-        }
+            #endregion
 
-        private void btnAnnuler_Click(object sender, EventArgs e){
-            this.Close();
-        }
+            #region gestion Events
+            private void btnAnnuler_Click(object sender, EventArgs e){
+                this.Close();
+            }
 
-        private void btnOk_Click(object sender, EventArgs e)
-        {
-            FunctionDatabaseFile fndb = new FunctionDatabaseFile();
-            fndb.saveSelectedFile(cbxFichiers.Text);
-            this.Close();
-        }
+            private void btnOk_Click(object sender, EventArgs e)
+            {
+                FunctionDatabaseFile fndb = new FunctionDatabaseFile();
+                fndb.saveSelectedDatabase(cbxFichiers.Text);
+                this.activateRefresh();
+                this.Close();
+            }
+        #endregion
     }
 }

@@ -47,6 +47,7 @@
             this.cbxTheme2 = new System.Windows.Forms.ComboBox();
             this.lblLieu = new System.Windows.Forms.Label();
             this.txtLieu = new System.Windows.Forms.TextBox();
+            this.btnAjoutActeur = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEnregistrer
@@ -154,7 +155,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPersonnes.Location = new System.Drawing.Point(157, 153);
             this.txtPersonnes.Name = "txtPersonnes";
-            this.txtPersonnes.Size = new System.Drawing.Size(575, 20);
+            this.txtPersonnes.Size = new System.Drawing.Size(517, 20);
             this.txtPersonnes.TabIndex = 4;
             // 
             // txtDescription
@@ -219,11 +220,22 @@
             this.txtLieu.Size = new System.Drawing.Size(575, 20);
             this.txtLieu.TabIndex = 10;
             // 
+            // btnAjoutActeur
+            // 
+            this.btnAjoutActeur.Location = new System.Drawing.Point(680, 151);
+            this.btnAjoutActeur.Name = "btnAjoutActeur";
+            this.btnAjoutActeur.Size = new System.Drawing.Size(52, 23);
+            this.btnAjoutActeur.TabIndex = 11;
+            this.btnAjoutActeur.Text = "Ajouter";
+            this.btnAjoutActeur.UseVisualStyleBackColor = true;
+            this.btnAjoutActeur.Click += new System.EventHandler(this.btnAjoutActeur_Click);
+            // 
             // FormulaireFiche
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 363);
+            this.Controls.Add(this.btnAjoutActeur);
             this.Controls.Add(this.txtLieu);
             this.Controls.Add(this.lblLieu);
             this.Controls.Add(this.cbxTheme2);
@@ -271,5 +283,6 @@
         private System.Windows.Forms.ComboBox cbxTheme2;
         private System.Windows.Forms.Label lblLieu;
         private System.Windows.Forms.TextBox txtLieu;
+        private System.Windows.Forms.Button btnAjoutActeur;
     }
 }

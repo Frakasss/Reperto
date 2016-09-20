@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <couleurApp>
-    <couleurSelectionnee>Bleu</couleurSelectionnee>
-  </couleurApp>
-  <fichiers>
-    <database>Jacquier.xml</database>
-  </fichiers>
-</root>

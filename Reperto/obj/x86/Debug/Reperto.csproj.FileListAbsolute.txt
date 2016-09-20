@@ -50,3 +50,5 @@ D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.Properties.Re
 D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.csproj.GenerateResource.Cache
 D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.FormulaireNouvelleDB.resources
 D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.FormulaireOuvrir.resources
+D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.FormulaireActeurs.resources
+D:\VisualStudio\-MyProjects-\Reperto\Reperto\obj\x86\Debug\Reperto.FormulaireSelectAnnuaire.resources

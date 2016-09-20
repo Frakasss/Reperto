@@ -73,6 +73,12 @@
     <Compile Include="FicheVisu.Designer.cs">
       <DependentUpon>FicheVisu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormulaireActeurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireActeurs.Designer.cs">
+      <DependentUpon>FormulaireActeurs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormulaireFiche.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,12 @@
     </Compile>
     <Compile Include="FormulaireOuvrir.Designer.cs">
       <DependentUpon>FormulaireOuvrir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaireSelectAnnuaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireSelectAnnuaire.Designer.cs">
+      <DependentUpon>FormulaireSelectAnnuaire.cs</DependentUpon>
     </Compile>
     <Compile Include="FormulaireTheme.cs">
       <SubType>Form</SubType>
@@ -111,6 +123,9 @@
     <EmbeddedResource Include="FicheVisu.resx">
       <DependentUpon>FicheVisu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormulaireActeurs.resx">
+      <DependentUpon>FormulaireActeurs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormulaireFiche.resx">
       <DependentUpon>FormulaireFiche.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormulaireOuvrir.resx">
       <DependentUpon>FormulaireOuvrir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaireSelectAnnuaire.resx">
+      <DependentUpon>FormulaireSelectAnnuaire.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulaireTheme.resx">
       <DependentUpon>FormulaireTheme.cs</DependentUpon>

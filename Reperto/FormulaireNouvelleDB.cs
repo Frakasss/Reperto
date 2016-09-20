@@ -13,7 +13,11 @@ namespace Reperto
     {
         #region global var
             GlobalFunctions gfctn = new GlobalFunctions();
+            FunctionFiches fnfich = new FunctionFiches();
             FunctionDatabaseFile fndb = new FunctionDatabaseFile();
+            FunctionThemes fnth = new FunctionThemes();
+            public delegate void ChildEvent();
+            public event ChildEvent activateRefresh;
             string gTxtRechCassette; 
             string gCbxMois; 
             string gTxtAnnee; 
@@ -58,15 +62,37 @@ namespace Reperto
                 //creation fichier
                 fnCreateFile();
                 fnSetUpFile();
+                this.activateRefresh();
                 this.Close();
             }
 
+            //changement contenu textbox
+            private void txtDBName_TextChanged(object sender, EventArgs e)
+            {
+                if (this.txtDBName.Text == "")
+                {
+                    this.btnCreer.Enabled = false;
+                }
+                else
+                {
+                    if (System.IO.File.Exists(gfctn.AppRootPath() + "Reperto/" + this.txtDBName.Text + ".xml"))
+                    {
+                        this.btnCreer.Enabled = false;
+                        lblAlerte.Visible = true;
+                    }
+                    else
+                    {
+                        this.btnCreer.Enabled = true;
+                        lblAlerte.Visible = false;
+                    }
+                }
+            }
         #endregion
 
         #region fonctions
             //créer fichier
             private void fnCreateFile(){
-                System.IO.FileStream fs = System.IO.File.Create(gfctn.AppRootPath() + "MyDB/" + this.txtDBName.Text + ".xml");
+                System.IO.FileStream fs = System.IO.File.Create(gfctn.AppRootPath() + "Reperto/" + this.txtDBName.Text + ".xml");
                 fs.Close();
             }
 
@@ -74,29 +100,12 @@ namespace Reperto
             private void fnSetUpFile()
             {
                 string[] lines = { "<root>", "<themes>", "</themes>","<fiches>","</fiches>","</root>" };
-                System.IO.File.WriteAllLines(gfctn.AppRootPath() + "MyDB/" + this.txtDBName.Text + ".xml", lines);
-                if (chkImportTheme.Checked == true) { fndb.importThemes(this.txtDBName.Text + ".xml"); }
-                if (chkImportData.Checked == true) { fndb.importData(this.txtDBName.Text + ".xml", gTxtRechCassette, gCbxMois, gTxtAnnee, gCbxTheme1, gCbxTheme2, gTxtPersonne, gTxtLieu, gTxtMotCle); }
-                fndb.saveSelectedFile(this.txtDBName.Text + ".xml");
+                System.IO.File.WriteAllLines(gfctn.AppRootPath() + "Reperto/" + this.txtDBName.Text + ".xml", lines);
+                if (chkImportTheme.Checked == true) { fnth.importThemes(this.txtDBName.Text + ".xml"); }
+                if (chkImportData.Checked == true) { fnfich.importData(this.txtDBName.Text + ".xml", gTxtRechCassette, gCbxMois, gTxtAnnee, gCbxTheme1, gCbxTheme2, gTxtPersonne, gTxtLieu, gTxtMotCle); }
+                fndb.saveSelectedDatabase(this.txtDBName.Text + ".xml");
             }
         #endregion
 
-        private void txtDBName_TextChanged(object sender, EventArgs e)
-        {
-            if (this.txtDBName.Text == ""){
-                this.btnCreer.Enabled = false;
-            }else{
-                if (System.IO.File.Exists(gfctn.AppRootPath() + "MyDB/" + this.txtDBName.Text + ".xml"))
-                {
-                    this.btnCreer.Enabled = false;
-                    lblAlerte.Visible = true;
-                }
-                else
-                {
-                    this.btnCreer.Enabled = true;
-                    lblAlerte.Visible = false;
-                }
-            }
-        }
     }
 }

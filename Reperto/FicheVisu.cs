@@ -36,7 +36,7 @@ namespace Reperto
             this.lblCassette.Text = myfiche.Cassette;
             this.lblDate.Text = myfiche.Date;
             this.lblTheme1.Text = myfiche.Theme1 + " - " + myfiche.Theme2;
-            desc = myfiche.Lieu + "\n\n" + myfiche.Personne + "\n\n" + myfiche.Description.Replace(" - ", "\n - ");
+            desc = myfiche.Lieu + "\n\n" + myfiche.Personne + "\n\n" + "Description : \n - " +myfiche.Description.Replace(" - ", "\n - ");
             this.lblDescription.Text = desc;
             this.lblLienVideo.Text = myfiche.LienVideo;
             this.lblDebutSequence.Text = myfiche.TempsDebutSequence;

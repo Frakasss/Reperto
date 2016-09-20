@@ -79,6 +79,8 @@
             this.gestionDesThèmesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnVisualiser = new System.Windows.Forms.Button();
             this.btnDupliquer = new System.Windows.Forms.Button();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.ouvrirAnnuaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListeFiches)).BeginInit();
             this.gbxFiltre.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -431,7 +433,9 @@
             // 
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.créerFichierToolStripMenuItem,
-            this.ouvrirFichierToolStripMenuItem});
+            this.ouvrirFichierToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.ouvrirAnnuaireToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.fichierToolStripMenuItem.Text = "Fichier";
@@ -439,15 +443,15 @@
             // créerFichierToolStripMenuItem
             // 
             this.créerFichierToolStripMenuItem.Name = "créerFichierToolStripMenuItem";
-            this.créerFichierToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.créerFichierToolStripMenuItem.Text = "Créer fichier...";
+            this.créerFichierToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.créerFichierToolStripMenuItem.Text = "Créer Base de Données...";
             this.créerFichierToolStripMenuItem.Click += new System.EventHandler(this.créerFichierToolStripMenuItem_Click);
             // 
             // ouvrirFichierToolStripMenuItem
             // 
             this.ouvrirFichierToolStripMenuItem.Name = "ouvrirFichierToolStripMenuItem";
-            this.ouvrirFichierToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.ouvrirFichierToolStripMenuItem.Text = "Ouvrir fichier...";
+            this.ouvrirFichierToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.ouvrirFichierToolStripMenuItem.Text = "Ouvrir Base de Données...";
             this.ouvrirFichierToolStripMenuItem.Click += new System.EventHandler(this.ouvrirFichierToolStripMenuItem_Click);
             // 
             // paramètresToolStripMenuItem1
@@ -559,6 +563,18 @@
             this.btnDupliquer.UseVisualStyleBackColor = true;
             this.btnDupliquer.Click += new System.EventHandler(this.btnDupliquer_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(205, 6);
+            // 
+            // ouvrirAnnuaireToolStripMenuItem
+            // 
+            this.ouvrirAnnuaireToolStripMenuItem.Name = "ouvrirAnnuaireToolStripMenuItem";
+            this.ouvrirAnnuaireToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.ouvrirAnnuaireToolStripMenuItem.Text = "Ouvrir Annuaire ...";
+            this.ouvrirAnnuaireToolStripMenuItem.Click += new System.EventHandler(this.ouvrirAnnuaireToolStripMenuItem_Click);
+            // 
             // Accueil
             // 
             this.AcceptButton = this.btnRechercher;
@@ -640,6 +656,8 @@
         private System.Windows.Forms.DataGridViewLinkColumn colLienVideo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLienVideoHidden;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDebutSequenceHidden;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem ouvrirAnnuaireToolStripMenuItem;
     }
 }
 

@@ -19,6 +19,10 @@ namespace Reperto
 
         string idToSelect;
         private void setIdToSelect(string s) { idToSelect = s; }
+        private void refreshDataGridView() {
+            InitializeThemeComboBox();
+            FillDatagridview(txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text); 
+        }
 
         public Accueil()
         {
@@ -218,7 +222,7 @@ namespace Reperto
                 FormulaireFiche formulaireFiche = new FormulaireFiche(Convert.ToInt32(idToSelect));
                 formulaireFiche.modeFiche = FormulaireFiche.ModeFiche.MODIFIER;
                 formulaireFiche.ShowDialog();
-                FillDatagridview(Convert.ToInt32(idToSelect), txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
+                FillDatagridview(idToSelect, txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
             }
         }
 
@@ -340,16 +344,23 @@ namespace Reperto
         private void créerFichierToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormulaireNouvelleDB frmDB = new FormulaireNouvelleDB(txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
+            frmDB.activateRefresh += new FormulaireNouvelleDB.ChildEvent(refreshDataGridView);
             frmDB.Show();
-            FillDatagridview(idToSelect, txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
         }
 
         // Clic menu ouvrir
         private void ouvrirFichierToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormulaireOuvrir formOuverture = new FormulaireOuvrir();
+            formOuverture.activateRefresh += new FormulaireOuvrir.ChildEvent(refreshDataGridView);
             formOuverture.Show();
-            FillDatagridview(txtRechCassette.Text, cbxMois.Text, txtAnnee.Text, cbxTheme1.Text, cbxTheme2.Text, txtPersonne.Text, txtLieu.Text, txtMotCle.Text);
+        }
+
+        // Clic menu annuaire
+        private void ouvrirAnnuaireToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormulaireSelectAnnuaire formAnnuaire = new FormulaireSelectAnnuaire();
+            formAnnuaire.Show();
         }
 
     }

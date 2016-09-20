@@ -391,18 +391,6 @@
       <tempsDebutSequence>00:00:00</tempsDebutSequence>
     </myFiche>
     <myFiche>
-      <id>27</id>
-      <cassette>C005</cassette>
-      <date>24-12-2004</date>
-      <theme1>Maison</theme1>
-      <theme2>Fête de Noël</theme2>
-      <personne>Jo, Pascale, Michel, Stéphane, Delphine</personne>
-      <lieu>ALTVILLER</lieu>
-      <description>Danse Delphine sur chants de Noël - Steph guitare - Farandole toute la famille - sapin, creche cadeaux</description>
-      <lienVideo>#</lienVideo>
-      <tempsDebutSequence>00:00:00</tempsDebutSequence>
-    </myFiche>
-    <myFiche>
       <id>28</id>
       <cassette>C006</cassette>
       <date>19-12-2004</date>
@@ -7575,6 +7563,18 @@
       <personne></personne>
       <lieu>ALTVILLER</lieu>
       <description>Hiver - Neige</description>
+      <lienVideo>#</lienVideo>
+      <tempsDebutSequence>00:00:00</tempsDebutSequence>
+    </myFiche>
+    <myFiche>
+      <id>27</id>
+      <cassette>C005</cassette>
+      <date>24-12-2004</date>
+      <theme1>Maison</theme1>
+      <theme2>Fête de Noël</theme2>
+      <personne>Jo, Pascale, Michel, Stéphane, Delphine</personne>
+      <lieu>ALTVILLER</lieu>
+      <description>Danse Delphine sur chants de Noël - Steph guitare - Farandole toute la famille - sapin, creche cadeaux</description>
       <lienVideo>#</lienVideo>
       <tempsDebutSequence>00:00:00</tempsDebutSequence>
     </myFiche>

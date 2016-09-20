@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <couleurApp>
+    <couleurSelectionnee>Standard</couleurSelectionnee>
+  </couleurApp>
+  <fichiers>
+    <database>MyXmlDB_test.xml</database>
+    <annuaire>test.xml</annuaire>
+  </fichiers>
+</root>
